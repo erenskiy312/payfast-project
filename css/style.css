@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    margin: 0;
+    line-height: 1.6;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Urbanist", sans-serif;
+    color: #333;
+  }
+
+  h1{
+    font-family: "Montserrat", sans-serif;
+  }
+
+  p {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  button {
+    font-family: "Urbanist", sans-serif;
+  }
+
+  a{
+    font-family: "Urbanist", sans-serif;
+
+  }
+
+  .header{
+    margin-top: -15px;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hat-icon{
+    position: absolute;
+    margin-left: -34px;
+    top: -3px;
+  }
+ 
+  .logo{
+    margin-left: -1%;
+    margin-top: 3%;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links{
+    display: flex;
+    list-style: none;
+    margin-top: 60px;
+    gap: 25px;
+  }
+
+  .separator{
+    background-color: #b6b2b2;
+    height: 24px;
+    width: 1px;
+  }
+
+
+  li > a{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+  }
+
+  li > img{
+    cursor: pointer;
+  }
+
+  button{
+    cursor: pointer;
+  }
+
+  li > button{
+    color: white;
+    background: #0030D0;
+    font-size: 16px;
+    width: 200px;
+    padding: 15px;
+    border: none;
+    margin-top: -11px;
+    border-radius: 15px;
+    font-weight: 700;
+    
+  }
+
+  .introduction {
+    display: flex;
+    margin-top: 17%;
+  }
+
+  .introduction > h1 {
+    font-size: 50px;
+  }
+
+  .highlight {
+    color: #0030D0;
+  }
+
+  .introduction > p {
+    font-size: 18px;
+  }
+
+  .transfer-btn {
+    cursor: pointer;
+    color: white;
+    background: #0030D0;
+    font-size: 18px;
+    width: 177px;
+    padding: 13px;
+    border: none;
+    margin-left: -11px;
+    margin-top: 10px;
+    border-radius: 12px;
+    font-weight: 700;
+  }
+
+  .convertion-btn {
+    cursor: pointer;
+    color: #6B7280;
+    background-color: white;
+    border: 1px solid #b6b2b2;
+    font-size: 18px;
+    width: 177px;
+    padding: 13px;
+    margin-left: 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    font-weight: 700;
+  }
+
+  .globe{
+    max-width: 140%;
+    margin-top: -120px;
+    margin-left: -20%;
+  }
+
+  
