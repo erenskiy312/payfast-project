@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Expires" content="0" />
+        <title>Конвертер валют</title>
+        <link rel="website icon" type="png"
+        href="./img/Favicon1.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/convertion.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <a href="https://payfast.exchange">
+            <img src="./img/Logo.svg" class="logo" alt="">
+        </a>
+        <noscript><div><img src="https://mc.yandex.ru/watch/97892345" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    </header>
+    <main>
+        <div class="conteiner">
+            <div class="progressbar">
+                <div class="progressBar-formApplication">
+                    <img src="./img/progressBar2.svg" alt="">
+                </div>
+                <div class="progressBar-formQuestionnaire hide">
+                    <img src="./img/progressBar3.svg" alt="">
+                </div>
+                <div class="progressBar-formCheck hide">
+                    <img src="./img/progressBar4.svg" alt="">
+                </div>
+            </div>
+            <div class="main">
+                <div class="wrapper">
+                    <!-- <div class="content">
+                        <div class="form" id="convertor">
+                            <div class="form-inputs">
+                                <div class="form-group">
+                                    <label for="amountFrom">Отправляете</label>
+                                    <input
+                                        class="input"
+                                        type="number" 
+                                        name="amountFrom" 
+                                        id="amountFrom" 
+                                        value="3499"
+                                        placeholder="1.00">
+                                        
+                                    
+                                    <div class="select" id="from-Select">
+                                        <div class="select-content">
+                                            <div class="select-content-icon">
+                                                <img src="./img/RUB.svg" class="select-icons-from hide" data-target-from="RUB" alt="">
+                                                <img src="./img/TRY.svg" class="select-icons-from hide" data-target-from="TRY" alt="">
+                                                <img src="./img/UKR.svg" class="select-icons-from" data-target-from="UAH" alt="">
+                                                <img src="./img/EUR.svg" class="select-icons-from hide" data-target-from="EUR" alt="">
+                                                <img src="./img/AMD.png" class="select-icons-from hide" data-target-from="AMD" alt="">
+                                                <img src="./img/AZN.png" class="select-icons-from hide" data-target-from="AZN" alt="">
+                                                <img src="./img/BYN.png" class="select-icons-from hide" data-target-from="BYN" alt="">
+                                                <img src="./img/HUF.png" class="select-icons-from hide" data-target-from="HUF" alt="">
+                                                <img src="./img/VND.png" class="select-icons-from hide" data-target-from="VND" alt="">
+                                                <img src="./img/HKD.png" class="select-icons-from hide" data-target-from="HKD" alt="">
+                                                <img src="./img/GEL.png" class="select-icons-from hide" data-target-from="GEL" alt="">
+                                                <img src="./img/EGP.png" class="select-icons-from hide" data-target-from="EGP" alt="">
+                                                <img src="./img/ILS.png" class="select-icons-from hide" data-target-from="ILS" alt="">
+                                                <img src="./img/INR.png" class="select-icons-from hide" data-target-from="INR" alt="">
+                                                <img src="./img/IDR.png" class="select-icons-from hide" data-target-from="IDR" alt="">
+                                                <img src="./img/CAD.png" class="select-icons-from hide" data-target-from="CAD" alt="">
+                                                <img src="./img/CNY.png" class="select-icons-from hide" data-target-from="CNY" alt="">
+                                                <img src="./img/KZT.png" class="select-icons-from hide" data-target-from="KZT" alt="">
+                                                <img src="./img/KGS.png" class="select-icons-from hide" data-target-from="KGS" alt="">
+                                                <img src="./img/PLN.png" class="select-icons-from hide" data-target-from="PLN" alt="">
+                                                <img src="./img/RON.png" class="select-icons-from hide" data-target-from="RON" alt="">
+                                                <img src="./img/TJS.png" class="select-icons-from hide" data-target-from="TJS" alt="">
+                                                <img src="./img/UZS.png" class="select-icons-from hide" data-target-from="UZS" alt="">
+                                                <img src="./img/RSD.png" class="select-icons-from hide" data-target-from="RSD" alt="">
+                                                <img src="./img/USD.png" class="select-icons-from hide" data-target-from="USD" alt="">
+
+
+
+                                            </div>
+                                            <div class="select-content-txt-from">UAH</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="border" id="borderFrom">
+                                        <div class="div hide" id="divFrom">
+                                            Выберите страну
+
+                                            <div class="select-countrys">
+                                                <div class="select-country select-country-from" data-path="RUB">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/RUB.svg" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Россия
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="UAH">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/UKR.svg" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Украина
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="TRY">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/TRY.svg" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Турция
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="EUR">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/EUR.svg" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Страны Европы
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="AMD">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/AMD.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Армения
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="AZN">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/AZN.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Азербайджан
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="BYN">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/BYN.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Беларусь
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="HUF">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/HUF.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Венгрия
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="VND">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/VND.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Вьетнам
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="HKD">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/HKD.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Гонконг
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="GEL">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/GEL.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Грузия
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="EGP">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/EGP.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Египет
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="ILS">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/ILS.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Израиль
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="INR">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/INR.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Индия
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="IDR">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/IDR.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Индонезия
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="CAD">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/CAD.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Канада
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="CNY">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/CNY.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Китай
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="KZT">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/KZT.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Казахстан
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="KGS">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/KGS.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Кыргызстан
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="PLN">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/PLN.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Польша
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="RON">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/RON.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Румыния
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="select-country select-country-from" data-path="RSD">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/RSD.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Сербия
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="USD">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/USD.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        США
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="TJS">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/TJS.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Таджикистан
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-from" data-path="UZS">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/UZS.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Узбекистан
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="minCoust"></div>
+                                </div>
+
+                                <div class="from-select__icon swich-currnsys">
+                                    <img class="from-select__icon" src="./img/arrows.svg" alt="">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="amountTo">Получаете</label>
+                                    <input
+                                        class="input"
+                                        type="number" 
+                                        name="amountTo" 
+                                        id="amountTo" 
+                                        value=""
+                                        placeholder="1.00">
+
+                                        
+                                    <div class="select" id="to-Select">
+                                        <div class="select-content">
+                                            <div class="select-content-icon">
+                                                <img src="./img/RUB.svg" class="select-icons-to" data-target-to="RUB" alt="">
+                                                <img src="./img/TRY.svg" class="select-icons-to hide" data-target-to="TRY" alt="">
+                                                <img src="./img/UKR.svg" class="select-icons-to hide" data-target-to="UAH" alt="">
+                                                <img src="./img/EUR.svg" class="select-icons-to hide" data-target-to="EUR" alt="">
+
+                                                <img src="./img/AMD.png" class="select-icons-to hide" data-target-to="AMD" alt="">
+                                                <img src="./img/AZN.png" class="select-icons-to hide" data-target-to="AZN" alt="">
+                                                <img src="./img/BYN.png" class="select-icons-to hide" data-target-to="BYN" alt="">
+                                                <img src="./img/HUF.png" class="select-icons-to hide" data-target-to="HUF" alt="">
+                                                <img src="./img/VND.png" class="select-icons-to hide" data-target-to="VND" alt="">
+                                                <img src="./img/HKD.png" class="select-icons-to hide" data-target-to="HKD" alt="">
+                                                <img src="./img/GEL.png" class="select-icons-to hide" data-target-to="GEL" alt="">
+                                                <img src="./img/EGP.png" class="select-icons-to hide" data-target-to="EGP" alt="">
+                                                <img src="./img/ILS.png" class="select-icons-to hide" data-target-to="ILS" alt="">
+                                                <img src="./img/INR.png" class="select-icons-to hide" data-target-to="INR" alt="">
+                                                <img src="./img/IDR.png" class="select-icons-to hide" data-target-to="IDR" alt="">
+                                                <img src="./img/CAD.png" class="select-icons-to hide" data-target-to="CAD" alt="">
+                                                <img src="./img/CNY.png" class="select-icons-to hide" data-target-to="CNY" alt="">
+                                                <img src="./img/KZT.png" class="select-icons-to hide" data-target-to="KZT" alt="">
+                                                <img src="./img/KGS.png" class="select-icons-to hide" data-target-to="KGS" alt="">
+                                                <img src="./img/PLN.png" class="select-icons-to hide" data-target-to="PLN" alt="">
+                                                <img src="./img/RON.png" class="select-icons-to hide" data-target-to="RON" alt="">
+                                                <img src="./img/TJS.png" class="select-icons-to hide" data-target-to="TJS" alt="">
+                                                <img src="./img/UZS.png" class="select-icons-to hide" data-target-to="UZS" alt="">
+                                                <img src="./img/RSD.png" class="select-icons-to hide" data-target-to="RSD" alt="">
+                                                <img src="./img/USD.png" class="select-icons-to hide" data-target-to="USD" alt="">
+                                            </div>
+                                            <div class="select-content-txt-to">RUB</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="border" id="borderTo">
+                                        <div class="div hide" id="divTo">
+                                            Выберите страну
+
+                                            <div class="select-countrys">
+                                                <div class="select-country select-country-to" data-path="RUB">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/RUB.svg" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Россия
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="UAH">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/UKR.svg" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Украина
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="TRY">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/TRY.svg" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Турция
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="EUR">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/EUR.svg" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Страны Европы
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="AMD">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/AMD.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Армения
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="AZN">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/AZN.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Азербайджан
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="BYN">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/BYN.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Беларусь
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="HUF">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/HUF.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Венгрия
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="VND">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/VND.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Вьетнам
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="HKD">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/HKD.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Гонконг
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="GEL">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/GEL.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Грузия
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="EGP">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/EGP.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Египет
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="ILS">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/ILS.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Израиль
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="INR">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/INR.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Индия
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="IDR">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/IDR.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Индонезия
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="CAD">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/CAD.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Канада
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="CNY">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/CNY.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Китай
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="KZT">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/KZT.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Казахстан
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="KGS">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/KGS.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Кыргызстан
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="PLN">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/PLN.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Польша
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="RON">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/RON.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Румыния
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="select-country select-country-to" data-path="RSD">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/RSD.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Сербия
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="USD">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/USD.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        США
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="select-country select-country-to" data-path="TJS">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/TJS.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Таджикистан
+                                                    </div>
+                                                </div>
+
+                                                <div class="select-country select-country-to" data-path="UZS">
+                                                    <div class="select-country-icon">
+                                                        <img src="./img/UZS.png" alt="">
+                                                    </div>
+                                                    <div class="select-country-name">
+                                                        Узбекистан
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="overlay-selector"></div>
+
+                                </div>
+                            </div>
+
+                            <div class="form-info">
+                                <div class="promo-inputs">
+                                    <div class="rare-conversion">
+                                        <label for="rate">Курс</label>
+                                        <input
+                                            class="inputAll"
+                                            type="number" 
+                                            name="rate" 
+                                            id="rate" 
+                                            value=""
+                                            readonly>
+                                    </div>
+                                    <div class="promo-info">
+                                        <label for="promo">Промокод</label>
+                                        <input
+                                            class="inputAll"
+                                            type="text" 
+                                            name="promo" 
+                                            id="promo" 
+                                            placeholder="ПРОМОКОД">
+                                    </div>
+                                </div>
+                                <div class="rate-information">
+                                    <div class="fee">
+                                        <div class="fee-rate">52 UAH</div>
+                                        <p class="fee-txt">Комиссия сервиса</p>
+                                    </div>
+                                    <div class="convert">
+                                        <div class="convert-rate">3 447 UAH</div>
+                                        <p class="convert-txt">Конвертируемая сумма</p>
+                                    </div>
+                                    <div class="transfer">
+                                        <div class="transfer-rate">До 30 минут</div>
+                                        <p class="transfer-txt">Поступление перевода</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-convert">
+                                <div class="rare-last">Обновлено 9 июля 2024 г.</div>
+                                <button class="next gain-center" id="toApplication">Перейти</button>
+                            </div>
+                        </div> -->
+                        <form class="form hide" id="application">
+                           <div class="back-icon" id="backToConvertor">
+                            <img src="./img/Back-icon.svg" alt="">
+                           </div>
+
+                           <div class="inputs">
+                                <div class="inputs-recipient">
+                                    <div class="input-description">Данные получателя</div>
+                                    <div class="input-recipient">
+                                        <input
+                                            class="FIO"
+                                            type="text" 
+                                            name="FIO" 
+                                            id="FIO" 
+                                            placeholder="ФИО">
+
+                                        <input
+                                            class="cartNumberTo"
+                                            type="number" 
+                                            name="cartNumberTo" 
+                                            id="cartNumberTo" 
+                                            placeholder="Номер карты/счёта">
+
+                                        <input
+                                            class="bank"
+                                            type="text" 
+                                            name="bank" 
+                                            id="bank" 
+                                            placeholder="Наименование банка">
+                                    </div>
+                                </div>
+
+                                <div class="inputs-sender">
+                                    <div class="input-description">Данные отправителя</div>
+                                    <div class="input-sender">
+                                        <input
+                                            class="senderName"
+                                            type="text" 
+                                            name="senderName" 
+                                            id="senderName" 
+                                            placeholder="Имя">
+
+                                        <input
+                                            class="messanger"
+                                            type="text" 
+                                            name="messanger" 
+                                            id="messanger" 
+                                            placeholder="Telegram/WhatsApp">
+
+                                        <input
+                                            class="cartNumberFrom"
+                                            type="number" 
+                                            name="cartNumberFrom" 
+                                            id="cartNumberFrom" 
+                                            placeholder="Последние 4 цифры номера карты">
+                                    </div>
+                                </div>
+                            </div>
+                           <div class="information-next">
+                            <div class="description-next">
+                                <p>— Среднее время обработки заявки — 15-30 минут</p>
+                                <p>— В поле “Последние 4 цифры номера карты” нужно указать номер карты 
+                                    отправителя или человека, который будет производить оплату заявки</p>
+                                <p>— О нашей системе оплаты и о том, как ей пользоваться можно прочитать 
+                                    <button class="convert-description"><u>здесь</u></button></p>
+                            </div>
+                            <button class="next gain-center" id="toQuestionnaire">Перейти</button>
+                           </div>
+                        </form>
+
+                        <div class="form hide" id="payForm">
+                            
+                        </div>
+
+                        <div class="form hide" id="payFormAllBank">
+                            
+                        </div>
+
+                        <div class="form hide" id="checkForm">
+                            
+                        </div>
+
+                        <div class="modals-description">
+                            <div class="modal-description-overlay">
+                                <div class="modal-description description1">
+                                    <div class="modal_cloused-icon">
+                                        <img src="./img/close-icon.svg" alt="">
+                                    </div>
+                                    <div class="modal_cloused-title">
+                                        Платёжная система
+                                    </div>
+
+                                    <div class="description-modal-description">
+                                        Мы используем систему оплаты, при которой 
+                                        отправитель переводит средства напрямую
+                                        на указанные реквизиты. Мы обеспечиваем
+                                        полную безопасность и быстрое завершение
+                                        каждой сделки, гарантируя удобство и 
+                                        высокую скорость проведения транзакций
+                                    </div>
+                                    
+                                    <button class="description-next" id="nextModalDescription1">Читать далее 1/3</button>
+                                </div>
+
+                                <div class="modal-description description2">
+                                    <div class="modal_cloused-icon">
+                                        <img src="./img/close-icon.svg" alt="">
+                                    </div>
+                                    <div class="modal_cloused-title">
+                                        Платёжная система
+                                    </div>
+
+                                    <div class="description-modal-description">
+                                        <!-- Поступление средств проверяется менеджером
+                                        в ручном режиме. Подтверждение оплаты обычно 
+                                        занимает не больше 10 минут. После проверки мы
+                                        оперативано переводим средства на счёт получателя -->
+                                        Поступление средств проверяется в 
+                                        автоматическом режиме, что ускоряет
+                                        процесс подтверждения и обеспечивает
+                                        своевременное выполнение всех транзакций
+                                        без каких либо задержек
+                                    </div>
+                                    
+                                    <button class="description-next" id="nextModalDescription2">Читать далее 2/3</button>
+                                </div>
+
+                                <div class="modal-description description3">
+                                    <div class="modal_cloused-icon" id="modal-description-clouse">
+                                        <img src="./img/close-icon.svg" alt="">
+                                    </div>
+                                    <div class="modal_cloused-title">
+                                        Платёжная система
+                                    </div>
+
+                                    <div class="description-modal-description">
+                                        С момента оплаты заявки, автоматически 
+                                        начинается процесс перевода на 
+                                        реквизиты получателя, которые были 
+                                        указаны в форме заявки. В случае ошибки 
+                                        в реквизитах, просьба незамедлительно 
+                                        написать менеджеру
+                                    </div>
+                                    
+                                    <button class="description-next">Читать далее 3/3</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="modals_cloused">
+                            <div class="modals_cloused-overlay">
+                                <div class="modal_cloused">
+                                    <div class="modal_cloused-icon" id="modal_cloused-clouse">
+                                        <img src="./img/close-icon.svg" alt="">
+                                    </div>
+                                    <div class="modal_cloused-title">
+                                        Режим работы
+                                    </div>
+                                    <div class="modal_cloused-date">
+                                        <span class="left">пн.-пт. 10:00-20:00</span>
+                                        <span class="right">сб.-вс. 12:00-20:00</span>
+                                    </div>
+                                    <div class="modal_cloused-discription">
+                                        В данный момент мы закрыты. Но, Вы можете сделать перевод. <br>
+                                        Он будет обработан сразу, как только мы откроемся.
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="modals">
+                            <div class="modal-overlay">
+                                <div class="modal modal_Akbank" data-target="akBank">
+                                    <div class="close-icon">
+                                        <img src="./img/close-icon.svg" alt="">
+                                    </div>
+
+                                    <div class="bank-information">
+                                        <div class="bank-icon">
+                                            <img src="./img/akBank-icon.svg" alt="">
+                                        </div>
+                                        <div class="bank-title">
+                                            AKBANK
+                                        </div>
+                                        <div class="bank-translate">
+                                            К оплате 2545₴
+                                            <div class="bank-translate-border"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="translate-information">
+                                        <P>Совершите перевод по указанным реквизитам</P>
+                                        <div class="translation-cartNumber">
+                                            TR75 0004 6012 0588 8000 0853 01
+                                            <button class="copy-translation-cartNumber" data-path="TR75 0004 6012 0588 8000 0853 01"><img src="./img/copyButton.svg" alt=""></button>
+                                        </div>
+                                        <div class="translation-name">
+                                            Nihat Turan
+                                        </div>
+                                        <li>Убедитесь, что ФИО и банк соответствуют выданным Вам реквизитам</li>
+                                        <li>Платёж должен быть совершён одной суммой</li>
+                                        <li>Для повторной оплаты перевода будут выданы другие банковские реквизиты</li>
+                                    </div>
+                                    <div class="button-pay">
+                                        <div class="paidQr" data-path="paidQrAkBank">Оплатить по QR-коду</div>
+                                        <button class="paid gain-center" data-path="paymentСonfirmation">Я оплатил</button>
+                                    </div>
+                                </div>
+
+                                <div class="modal modal-paidQr" data-target="paidQrAkBank">
+                                    <div class="close-icon">
+                                        <img src="./img/close-icon.svg" alt="">
+                                    </div>
+
+                                    <div class="bank-information">
+                                        <div class="bank-icon">
+                                            <img src="./img/akBank-icon.svg" alt="">
+                                        </div>
+                                        <div class="bank-title">
+                                            AKBANK
+                                        </div>
+                                        <div class="bank-translate">
+                                            К оплате 2545₴
+                                            <div class="bank-translate-border"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="translate-information">
+                                        <div class="translation-cartNumber">
+                                            <img src="./img/QrAkBank.svg" alt="">
+                                        </div>
+                                        <div class="translation-name">
+                                            Nihat Turan
+                                        </div>
+                                    </div>
+                                    <div class="button-pay">
+                                        <button class="paid gain-center" data-path="paymentСonfirmation">Я оплатил</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal modal_vakifBank" data-target="vakifBank">
+                                    <div class="close-icon">
+                                        <img src="./img/close-icon.svg" alt="">
+                                    </div>
+
+                                    <div class="bank-information">
+                                        <div class="bank-icon">
+                                            <img src="./img/vakifbank-icon.svg" alt="">
+                                        </div>
+                                        <div class="bank-title">
+                                            VakifBank
+                                        </div>
+                                        <div class="bank-translate">
+                                            К оплате 2545₴
+                                            <div class="bank-translate-border"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="translate-information">
+                                        <P>Совершите перевод по указанным реквизитам</P>
+                                        <div class="translation-cartNumber">
+                                            0000 0000 0000 0000
+                                            <button class="copy-translation-cartNumber" data-path="0000 0000 0000 0000"><img src="./img/copyButton.svg" alt=""></button>
+                                        </div>
+                                        <div class="translation-name">
+                                            Nihat Turan
+                                        </div>
+                                        <li>Убедитесь, что ФИО и банк соответствуют выданным Вам реквизитам</li>
+                                        <li>Платёж должен быть совершён одной суммой</li>
+                                        <li>Для повторной оплаты перевода будут выданы другие банковские реквизиты</li>
+                                    </div>
+                                    <div class="button-pay">
+                                        <button class="paid gain-center" data-path="paymentСonfirmation">Я оплатил</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal modal_Privat" data-target="privat">
+                                    <div class="close-icon">
+                                        <img src="./img/close-icon.svg" alt="">
+                                    </div>
+
+                                    <div class="bank-information">
+                                        <div class="bank-icon">
+                                            <img src="./img/privat-logo.svg" alt="">
+                                        </div>
+                                        <div class="bank-title">
+                                            ПриватБанк
+                                        </div>
+                                        <div class="bank-translate">
+                                            К оплате 2545₴
+                                            <div class="bank-translate-border"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="translate-information">
+                                        <P>Совершите перевод по указанным реквизитам</P>
+                                        <div class="translation-cartNumber">
+                                            <button class="copy-translation-cartNumber" data-path="5457 0822 2889 7836"><img src="./img/copyButton.svg" alt=""></button>
+                                        </div>
+                                        <div class="translation-name">
+                                        </div>
+                                        <li>Убедитесь, что ФИО и банк соответствуют выданным Вам реквизитам</li>
+                                        <li>Платёж должен быть совершён одной суммой</li>
+                                        <li>Для повторной оплаты перевода будут выданы другие банковские реквизиты</li>
+                                    </div>
+                                    <div class="button-pay">
+                                        <button class="paid gain-center" data-path="paymentСonfirmation">Я оплатил</button>
+                                    </div>
+                                </div>
+
+                                <div class="modal modal_Spb" data-target="spb">
+                                    <div class="close-icon">
+                                        <img src="./img/close-icon.svg" alt="">
+                                    </div>
+
+                                    <div class="bank-information">
+                                        <div class="bank-icon">
+                                            <img src="./img/spb-icon.svg" alt="">
+                                        </div>
+                                        <div class="bank-title">
+                                            СБП
+                                            <div class="bank-title-decoding">
+                                                &nbsp;Сбербанк/Т-Банк
+                                            </div>
+                                        </div>
+                                        <div class="bank-translate">
+                                            К оплате 2545₴
+                                            <div class="bank-translate-border"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="translate-information">
+                                        <P>Совершите перевод по указанным реквизитам</P>
+                                        <div class="translation-cartNumber">
+                                            <button class="copy-translation-cartNumber" data-path="+7 (917) 391-52-57"><img src="./img/copyButton.svg" alt=""></button>
+                                        </div>
+                                        <div class="translation-name">
+                                        </div>
+                                        <li>Убедитесь, что ФИО и банк соответствуют выданным Вам реквизитам</li>
+                                        <li>Платёж должен быть совершён одной суммой</li>
+                                        <li>Для повторной оплаты перевода будут выданы другие банковские реквизиты</li>
+                                    </div>
+                                    <div class="button-pay">
+                                        <button class="paid gain-center" data-path="paymentСonfirmation">Я оплатил</button>
+                                    </div>
+                                </div>
+
+                                <div class="modal modal_Tinkoff" data-target="tinkoff">
+                                    <div class="close-icon">
+                                        <img src="./img/close-icon.svg" alt="">
+                                    </div>
+
+                                    <div class="bank-information">
+                                        <div class="bank-icon">
+                                            <img src="./img/T-Bank-icon.svg" alt="">
+                                        </div>
+                                        <div class="bank-title">
+                                            Т-Банк
+                                        </div>
+                                        <div class="bank-translate">
+                                            К оплате 2545₴
+                                            <div class="bank-translate-border"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="translate-information">
+                                        <P>Совершите перевод по указанным реквизитам</P>
+                                        <div class="translation-cartNumber">
+                                        </div>
+                                        <li>Убедитесь, что ФИО и банк соответствуют выданным Вам реквизитам</li>
+                                        <li>Платёж должен быть совершён одной суммой</li>
+                                        <li>Для повторной оплаты перевода будут выданы другие банковские реквизиты</li>
+                                    </div>
+                                    <div class="button-pay">
+                                        <div class="paidQr" data-path="paidQrTinkoff">Оплатить по QR-коду</div>
+                                        <button class="paid gain-center" data-path="paymentСonfirmation">Я оплатил</button>
+                                    </div>
+                                </div>
+
+                                <div class="modal modal-paidQr" data-target="paidQrTinkoff">
+                                    <div class="close-icon">
+                                        <img src="./img/close-icon.svg" alt="">
+                                    </div>
+
+                                    <div class="bank-information">
+                                        <div class="bank-icon">
+                                            <img src="./img/T-Bank-icon.svg" alt="">
+                                        </div>
+                                        <div class="bank-title">
+                                            Т-Банк
+                                        </div>
+                                        <div class="bank-translate">
+                                            К оплате 2545₴
+                                            <div class="bank-translate-border"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="translate-information">
+                                        <div class="translation-cartNumber">
+                                            <img src="./img/QrTinkoff.svg" alt="">
+                                        </div>
+                                        <div class="translation-name">
+                                            Nihat Turan
+                                        </div>
+                                    </div>
+                                    <div class="button-pay">
+                                        <button class="paid gain-center" data-path="paymentСonfirmation">Я оплатил</button>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="modal modal_Sber" data-target="sber">
+                                    <div class="close-icon">
+                                        <img src="./img/close-icon.svg" alt="">
+                                    </div>
+
+                                    <div class="bank-information">
+                                        <div class="bank-icon">
+                                            <img src="./img/sber-icon.svg" alt="">
+                                        </div>
+                                        <div class="bank-title">
+                                            Сбербанк
+                                        </div>
+                                        <div class="bank-translate">
+                                            К оплате 2545₴
+                                            <div class="bank-translate-border"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="translate-information">
+                                        <P>Совершите перевод по указанным реквизитам</P>
+                                        <div class="translation-cartNumber">
+                                        </div>
+                                        <li>Убедитесь, что ФИО и банк соответствуют выданным Вам реквизитам</li>
+                                        <li>Платёж должен быть совершён одной суммой</li>
+                                        <li>Для повторной оплаты перевода будут выданы другие банковские реквизиты</li>
+                                    </div>
+                                    <div class="button-pay">
+                                        <div class="paidQr" data-path="paidQrSber">Оплатить по QR-коду</div>
+                                        <button class="paid gain-center" data-path="paymentСonfirmation">Я оплатил</button>
+                                    </div>
+                                </div>
+
+                                <div class="modal modal-paidQr" data-target="paidQrSber">
+                                    <div class="close-icon">
+                                        <img src="./img/close-icon.svg" alt="">
+                                    </div>
+
+                                    <div class="bank-information">
+                                        <div class="bank-icon">
+                                            <img src="./img/sber-icon.svg" alt="">
+                                        </div>
+                                        <div class="bank-title">
+                                            Сбербанк
+                                        </div>
+                                        <div class="bank-translate">
+                                            К оплате 2545₴
+                                            <div class="bank-translate-border"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="translate-information">
+                                        <div class="translation-cartNumber">
+                                            <img src="./img/QrSber.png" alt="">
+                                        </div>
+                                        <div class="translation-name">
+                                            Nihat Turan
+                                        </div>
+                                    </div>
+                                    <div class="button-pay">
+                                        <button class="paid gain-center" data-path="paymentСonfirmation">Я оплатил</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal modal_Allbank" data-target="allBank">
+                                    <div class="close-icon">
+                                        <img src="./img/close-icon.svg" alt="">
+                                    </div>
+
+                                    <div class="translate-information">
+                                        <div class="title">Другие способы оплаты</div>
+                                        
+                                        <p>Если вы не нашли нужный способ оплаты, наш менеджер с радостью предложит альтернативные варианты, подходящие именно вам. Свяжитесь с ним, и он поможет вам выбрать лучший способ для осуществления вашей заявки!</p>
+                                    </div>
+                                    <div class="button-pay">
+                                        <button class="toMenager buttonForAllBank gain-center" id="toMenager" data-path="contacts">Связаться самостоятельно</button>
+                                        <button class="toAuto buttonForAllBank gain-center" data-path="toTg">Ожидать обратную связь</button>
+                                    </div>
+                                </div>
+
+                                <div class="modal AutoToTg" data-target="toTg">
+                                    <div class="translate-information">
+                                        <P>Спасибо за вашу заявку! В ближайшее время наш менеджер свяжется с вами для дальнейшей обработки и предоставления необходимой информации</P>
+                                    </div>
+                                    <div class="button-pay">
+                                        <button class="toMain gain-center">Закрыть</button>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="modal paymentСonfirmation" data-target="paymentСonfirmation">
+                                    <div class="translate-information">
+                                        <P>Вы подтверждаете, что успешно совершили перевод по предоставленным реквизитам?</P>
+                                    </div>
+                                    <div class="button-pay">
+                                        <button class="paidYes gain-center">Да</button>
+                                        <button class="paidNo gain-center">Нет</button>
+
+                                    </div>
+                                </div>
+
+                                <div class="modal modal_Contacts" data-target="contacts">
+                                    <div class="close-icon">
+                                        <img src="./img/close-icon.svg" alt="">
+                                    </div>
+
+                                    <div class="orderNumber">Назовите номер заявки №</div>
+
+                                    <div class="buttons">
+                                        <a href=" https://wa.me/+35795909400" target="_blank">
+                                            <div class="button-contects whatsApp gain-center">
+                                                <div class="button-contects-icons">
+                                                    <img src="./img/whatsApp.svg" alt="">
+                                                </div>
+                                                <div class="button-contects-text">Связаться в WhatsApp</div>
+                                            </div>
+                                        </a>
+                                        <a href="https://t.me/victoria_support" target="_blank">
+                                            <div class="button-contects Tg gain-center">
+                                                <div class="button-contects-icons">
+                                                    <img src="./img/Tg.svg" alt="">
+                                                </div>
+                                                <div class="button-contects-text">Связаться в Telegram</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/Metrika.js"></script>
+    <script src="./js/Chatra.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
