@@ -3,8 +3,68 @@ const langDropdown = document.querySelector('.lang-dropdown');
 const langOptions = document.querySelectorAll('.lang-option');
 const arrow = document.querySelector('.arrow-indicator');
 
-const networkToggle = document.getElementById('network-toggle')
-const dropdownNetwork = document.querySelector('.dropdown-network')
+const networkToggle = document.getElementById('network-toggle');
+const dropdownNetwork = document.querySelector('.dropdown-network');
+
+const modalPromo = document.getElementById('modal-promo');
+const openModalPromo = document.getElementById('openModalPromo');
+const closeModalPromo = document.getElementById('closeModalPromo');
+const promoCode = document.getElementById('promo-code')
+const copyBtnPromo = document.getElementById('copyBtn');
+
+const modalKYC = document.getElementById('modal-kyc');
+const openModalKYC = document.getElementById('openModalKYC');
+const closeModalKYC = document.getElementById('closeModalKYC');
+
+
+openModalPromo.addEventListener('click', () => {
+  modalPromo.classList.add('show')
+})
+
+closeModalPromo.addEventListener('click', () => {
+  modalPromo.classList.remove('show')
+})
+
+modalPromo.addEventListener('click', (e) => {
+  if (e.target === modalPromo) {
+    modalPromo.classList.remove('show')
+  };
+})
+
+openModalKYC.addEventListener('click', () => {
+  modalKYC.classList.add('show')
+})
+
+closeModalKYC.addEventListener('click', () => {
+  modalKYC.classList.remove('show')
+})
+
+modalKYC.addEventListener('click', (e) => {
+  if (e.target === modalKYC) {
+    modalKYC.classList.remove('show')
+  }
+})
+
+const copyText = (text, element) => {
+  navigator.clipboard.writeText(text).then(() => {
+    const originalText = element.innerText;
+    element.innerText = 'Скопировано';
+    element.disabled = true;
+
+    setTimeout(() => {
+      element.innerText = originalText;
+      element.disabled = false;
+    }, 2000)
+  });
+}
+
+copyBtnPromo.addEventListener('click', () => {
+  copyText(copyBtnPromo.innerText, copyBtnPromo,);
+})
+
+promoCode.addEventListener('click', () => {
+  copyText(copyBtnPromo.innerHTML, copyBtnPromo)
+})
 
 let currentLang = 'ru';
 

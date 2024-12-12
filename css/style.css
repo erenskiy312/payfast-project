@@ -549,14 +549,19 @@ footer{
   display: none;
 }
 
+.modal-promo-overlay.show {
+  display: block;
+}
+
 .modal-promo-content {
   background-color: white;
   padding: 25px;
+  margin: auto;
   border-radius: 30px;
   text-align: center;
   width: 90%;
   max-width: 673px;
-  transform: translateY(-30px);
+  transform: translateY(180px);
   transition: transform 0.3s ease;
 }
 
@@ -632,6 +637,10 @@ footer{
   align-items: center;
   transition: visibility 0.2s, opacity 0.2s;
   display: none;
+}
+
+.modal-kyc-overlay.show {
+  display: flex;
 }
 
 
