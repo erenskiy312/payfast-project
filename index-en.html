@@ -13,11 +13,6 @@
         <img class="hat-icon" src="img/hat-icon.svg" alt="">
         <img class="logo" src="img/logo.svg" alt="">
         <ul class="nav-links">
-          <div class="lang-switcher">
-            <button class="lang-btn" data-lang="en">English</button>
-            <button class="lang-btn" data-lang="tr">Türkçe</button>
-            <button class="lang-btn" data-lang="ru">Русский</button>
-          </div>
           <li>
             <svg id="openModalPromo" class="gift-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.5877 3.98498H0.41272V7.17793H19.5877V3.98498Z" fill="#469BB5"/>
@@ -53,33 +48,56 @@
                 </svg>
           </li>
 
-          <li>
-            <svg class="language-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6206 2.00706C11.7465 2.00237 11.873 2 12 2C12.127 2 12.2535 2.00237 12.3794 2.00706C12.4959 1.99298 12.6135 1.99971 12.7265 2.02599C17.9102 2.39815 22 6.72146 22 12C22 17.2785 17.9102 21.6019 12.7265 21.974C12.6135 22.0003 12.4959 22.007 12.3794 21.9929C12.2535 21.9976 12.127 22 12 22C11.873 22 11.7465 21.9976 11.6206 21.9929C11.504 22.007 11.3865 22.0003 11.2735 21.974C6.08979 21.6018 2 17.2785 2 12C2 6.72147 6.08979 2.39817 11.2735 2.02599C11.3865 1.99971 11.504 1.99298 11.6206 2.00706ZM14.3753 19.6415C16.3116 19.0402 17.9329 17.7233 18.9297 16H15.6277C15.3421 17.2534 14.9225 18.4743 14.3753 19.6415ZM13.5697 16C13.2202 17.3536 12.6937 18.6602 12 19.885C11.3063 18.6602 10.7797 17.3536 10.4302 16H13.5697ZM15.9663 14H19.748C19.9125 13.3608 20 12.6906 20 12C20 11.3094 19.9125 10.6392 19.748 10H15.9663C16.0404 10.662 16.0778 11.3297 16.0778 12C16.0778 12.6703 16.0404 13.338 15.9663 14ZM13.9523 10C14.0356 10.6611 14.0778 11.3291 14.0778 12C14.0778 12.6709 14.0356 13.3389 13.9523 14H10.0477C9.96437 13.3389 9.92218 12.6709 9.92218 12C9.92218 11.3291 9.96437 10.6611 10.0477 10H13.9523ZM15.6277 8H18.9297C17.9329 6.27669 16.3116 4.95975 14.3753 4.35852C14.9225 5.52565 15.3421 6.74663 15.6277 8ZM13.5697 8H10.4302C10.7797 6.64643 11.3063 5.33979 12 4.11504C12.6937 5.33979 13.2202 6.64643 13.5697 8ZM9.62469 4.35853C7.68839 4.95976 6.06714 6.2767 5.07026 8H8.37225C8.65792 6.74663 9.07745 5.52566 9.62469 4.35853ZM8.03363 10H4.25203C4.08751 10.6392 4 11.3094 4 12C4 12.6906 4.08751 13.3608 4.25204 14H8.03363C7.95961 13.338 7.92218 12.6703 7.92218 12C7.92218 11.3297 7.95961 10.662 8.03363 10ZM8.37225 16C8.65792 17.2534 9.07746 18.4743 9.62469 19.6415C7.68839 19.0402 6.06714 17.7233 5.07026 16H8.37225Z" fill="currentColor"/>
+          <div class="language-selector">
+
+            <li>
+                <svg id="lang-toggle" class="language-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6206 2.00706C11.7465 2.00237 11.873 2 12 2C12.127 2 12.2535 2.00237 12.3794 2.00706C12.4959 1.99298 12.6135 1.99971 12.7265 2.02599C17.9102 2.39815 22 6.72146 22 12C22 17.2785 17.9102 21.6019 12.7265 21.974C12.6135 22.0003 12.4959 22.007 12.3794 21.9929C12.2535 21.9976 12.127 22 12 22C11.873 22 11.7465 21.9976 11.6206 21.9929C11.504 22.007 11.3865 22.0003 11.2735 21.974C6.08979 21.6018 2 17.2785 2 12C2 6.72147 6.08979 2.39817 11.2735 2.02599C11.3865 1.99971 11.504 1.99298 11.6206 2.00706ZM14.3753 19.6415C16.3116 19.0402 17.9329 17.7233 18.9297 16H15.6277C15.3421 17.2534 14.9225 18.4743 14.3753 19.6415ZM13.5697 16C13.2202 17.3536 12.6937 18.6602 12 19.885C11.3063 18.6602 10.7797 17.3536 10.4302 16H13.5697ZM15.9663 14H19.748C19.9125 13.3608 20 12.6906 20 12C20 11.3094 19.9125 10.6392 19.748 10H15.9663C16.0404 10.662 16.0778 11.3297 16.0778 12C16.0778 12.6703 16.0404 13.338 15.9663 14ZM13.9523 10C14.0356 10.6611 14.0778 11.3291 14.0778 12C14.0778 12.6709 14.0356 13.3389 13.9523 14H10.0477C9.96437 13.3389 9.92218 12.6709 9.92218 12C9.92218 11.3291 9.96437 10.6611 10.0477 10H13.9523ZM15.6277 8H18.9297C17.9329 6.27669 16.3116 4.95975 14.3753 4.35852C14.9225 5.52565 15.3421 6.74663 15.6277 8ZM13.5697 8H10.4302C10.7797 6.64643 11.3063 5.33979 12 4.11504C12.6937 5.33979 13.2202 6.64643 13.5697 8ZM9.62469 4.35853C7.68839 4.95976 6.06714 6.2767 5.07026 8H8.37225C8.65792 6.74663 9.07745 5.52566 9.62469 4.35853ZM8.03363 10H4.25203C4.08751 10.6392 4 11.3094 4 12C4 12.6906 4.08751 13.3608 4.25204 14H8.03363C7.95961 13.338 7.92218 12.6703 7.92218 12C7.92218 11.3297 7.95961 10.662 8.03363 10ZM8.37225 16C8.65792 17.2534 9.07746 18.4743 9.62469 19.6415C7.68839 19.0402 6.06714 17.7233 5.07026 16H8.37225Z" fill="currentColor"/>
                 </svg>
-                
-          </li>
+            </li>
+            <ul class="lang-dropdown">
+                <li class="lang-option" data-lang="ru">
+                    <a href="index-ru.html">
+                        <img src="img/RU-lang-icon.svg" alt="Russian">
+                    </a>
+                </li>
+
+                <li class="lang-option" data-lang="en">
+                    <a href="index-en.html">
+                        <img src="img/US-lang-icon.svg" alt="English">
+                        <span class="arrow-indicator-en" ></span>
+                    </a>
+                </li>
+
+                <li class="lang-option" data-lang="tr">
+                    <a href="index-tr.html">
+                        <img src="img/TR-lang-icon.svg" alt="Turkish">
+                    </a>
+                </li>
+              </ul>
+          </div>
           <li class="separator"></li>
-          <li><a  class="nav-reviews" data-translate="nav.reviews" href="https://review.payfast.exchange/">Отзывы</a></li>
-          <li><button onClick="window.location.href='https://convert.payfast.exchange/'" data-translate="transfer-to-card">Перевести на карту</button></li>
+          <li><a  class="nav-reviews"  href="https://review.payfast.exchange/">Service reviews</a></li>
+          <li><button onClick="window.location.href='https://convert.payfast.exchange/'">Make a transfer</button></li>
         </ul>
       </nav>
 
       <div class="introduction">
         <div class="container">
 
-            <h1 data-translate="introduction.title">Денежные <span class="highlight" data-translate="highlight">переводы</span> <br>
-                без границ</h1>
-                <p data-translate="introduction.descr">Наш сервис обеспечивает быстрые и надежные денежные <br>
-                    переводы по всему миру. Мы предлагаем минимальные <br>
-                    комиссии и гарантируем высокий уровень обслуживания!</p>
+            <h1>Money <span class="highlight">transfers</span> without <br>
+                borders</h1>
+                <p id="introduction-descr">
+                    Our service provides fast and reliable money transfers <br>
+                    worldwide. We offer minimal fees and guarantee high-quality <br>
+                    service!
+                </p>
                     <button 
                     onClick="window.location.href='https://convert.payfast.exchange/'"
-                    class="transfer-btn">Перевести</button>
-                    <button class="convertion-btn">Конвертация</button>
+                    class="transfer-btn">Transfer</button>
+                    <button class="convertion-btn">Convert now</button>
                 </div>
                 <div class="globe-wrapper">
-
                     <img class="globe" src="img/globe.svg" alt="">
                 </div>
         </div>
@@ -89,54 +107,55 @@
 
   <main>
     <section class="features">
-            <h1>Почему стоит выбрать наш сервис</h1> 
+            <h1>Why you choose us</h1> 
             <div class="features-grid">
 
                 <div>
                   <div class="feature">
                       <img src="img/feature-first-icon.svg" alt="">
-                      <h3>Мгновенный расчет <br> курса</h3>
-                      <p>Узнайте актуальный курс и сумму <br> перевода в режиме реального <br> времени</p>
+                      <h3>Instant rate <br> calculation</h3>
+                      <p>Find out the current exchange rate <br> and transfer amount in real time</p>
                    </div>
                 </div>
 
                 <div>
                     <div class="feature">
                         <img src="img/feature-second-icon.svg" alt="">
-                        <h3>Простота <br> использования</h3>
-                        <p>Интерфейс интуитивно понятен, <br> даже если вы впервые <br> пользуетесь нашим сервисом</p>
+                        <h3>Ease of use</h3>
+                        <p>The interface is intuitive, even if <br> you’re using our service for the first <br> time</p>
                     </div>
                 </div>
                 
                 <div>
                     <div class="feature" id="feature-third">
                         <img src="img/feature-third-icon.svg" alt="">
-                        <h3>Быстрая обработка <br> заявки</h3>
-                        <p>Переводы выполняются через <br> менеджера в течение 30-и минут</p>
+                        <h3>Fast application <br> processing</h3>
+                        <p>Transfers are processed by a <br> manager within 30 minutes</p>
                     </div>
                 </div>
 
                 <div> 
                     <div class="feature" id="feature-fourth">
                         <img src="img/feature-fourth-icon.svg" alt="">
-                        <h3>Прозрачные <br> комиссии</h3>
-                        <p>Вся информация о комиссиях <br> указана заранее, на экране <br> подтверждения</p>
-                        
+                        <h3>Transparent <br> fees</h3>
+                        <p>All fee information is provided <br> upfront on the confirmation screen</p>
                     </div>
                 </div>
             </div>
     </section>
 </main>
     <section class="process">
-        <h1 class="process__title">Как это работает</h1>
+        <h1 class="process__title">How it works</h1>
         <div class="process__steps">
           <!-- Шаг 1 -->
           <div class="step">
             <img src="img/step-first-icon.svg" alt="">
             <div class="step__content">
-              <h3 class="step__title">Конвертация валюты</h3>
+              <h3 class="step__title">Currenncy conversion</h3>
               <p class="step__description">
-                Выбираете нужную валютную пару, например RUB-UAH, в том случае, если перевод будет направлен на Украину
+                Choose the desired currency <br>
+                pair, for example, RUB-UAH, if <br>
+                the transfer is directed to Ukraine
               </p>
             </div>
             <img class="pointer-first" src="img/pointer-first.svg" alt="">
@@ -145,9 +164,10 @@
           <div class="step">     
             <img src="img/step-second-icon.svg" alt="">
             <div class="step__content">
-              <h3 class="step__title">Оформление заявки</h3>
+              <h3 class="step__title">Filling on the application</h3>
               <p class="step__description">
-                Заполняете форму с данными отправителя и получателя
+                Fill out the form with the sender’s and <br>
+                recipient’s details
               </p>
             </div>
         </div>
@@ -156,9 +176,11 @@
             <img class="pointer-second" src="img/pointer-second.svg" alt="">
             <img src="img/step-third-icon.svg" alt="">
             <div class="step__content">
-              <h3 class="step__title">Оплата заявки</h3>
+              <h3 class="step__title">Payment of the application</h3>
               <p class="step__description">
-                Выбираете удобный способ оплаты, после чего оставляете заявку и с вами связывается менеджер для принятия оплаты
+                Choose a convenient payment method, <br>
+                then submit the application, and a manager <br>
+                will contact you to confirm the payment
               </p>
             </div>
           </div>
@@ -167,9 +189,10 @@
             <img class="pointer-third" src="img/pointer-third.svg" alt="">
             <img src="img/step-fourth-icon.svg" alt="">
             <div class="step__content">
-              <h3 class="step__title">Успешное завершение</h3>
+              <h3 class="step__title">Successful completion</h3>
               <p class="step__description">
-                Это всё! Деньги на счёт получателя будут зачислены до 30-и минут
+                That’s it! The recipient’s account will be <br>
+                credited within 30 minutes
               </p>
             </div>
           </div>
@@ -178,23 +201,26 @@
 
       <section class="help">
         <div class="help-content">
-            <h1 class="help-title">Требуется помощь?</h1>
-            <p class="help-descr">Напишите нам, мы онлайн! Специалист поддержки <br> ответит на все интересующие вас вопросы.</p>
+            <h1 class="help-title">Need help?</h1>
+            <p class="help-descr">
+              Write to us, we’re online! A support specialist will <br>
+              answer all your questions.
+            </p>
 
-                <button class="help-btn">Открыть чат</button>
+                <button class="help-btn">Open chat</button>
             <img class="help-icon" src="img/help-icon.svg" alt="">
         </div>
       </section>
 
       <section class="hero">
-        <h1 class="hero-title">Лёгкость в оплате, без лишних <br> формальностей</h1>
+        <h1 class="hero-title">Ease of payment, no unnecessary <br> formalities</h1>
         <div class="hero-buttons">
             <button 
             onClick="window.location.href='https://t.me/payfastexchange'"
-            class="hero-btn-telegram">ТЕЛЕГРАМ КАНАЛ</button>
+            class="hero-btn-telegram">TELEGRAM</button>
             <button 
             onClick="window.location.href='https://convert.payfast.exchange/'" 
-            class="hero-btn-convertion">ПЕРЕВЕСТИ</button>
+            class="hero-btn-convertion">TRANSFER NOW</button>
         </div>
       </section>
 
@@ -205,7 +231,7 @@
                 <img src="img/footer-payfast-logo.svg" alt="">
             </div>
               <div class="footer-info">
-                <p class="footer-descr">© 2021 Payfast Exchange. Более 100,000 довольных клиентов.</p>
+                <p class="footer-descr">© 2021 Payfast Exchange. More than 100,000 satisfied customers</p>
                 <a href="#" id="openModalKYC" class="footer-political">AML/KYC</a>
             </div>
             <div class="footer-icons">
@@ -266,11 +292,11 @@
         <div class="modal-promo-content">
           <img id="closeModalPromo" class="modal-promo-close" src="img/close-btn.svg" alt="">
           <h3 class="modal-promo-title">
-            Погасите 5% комиссии на <br>
-            странице <a href="https://convert.payfast.exchange/">конвертера</a> по промокоду
+            Pay off the 5% comission <br>
+            on the <a href="https://convert.payfast.exchange/">converter</a> page using the promo code
           </h3>
           <div id="promo-code" class="promo-code">PAYBONUS</div>
-          <button id="copyBtn" class="copy-promo-btn" >Копировать</button>
+          <button id="copyBtn" class="copy-promo-btn" >Copy</button>
         </div>
       </div>
 
@@ -279,112 +305,113 @@
 
           <div class="modal-kyc-content">
             <img id="closeModalKYC" class="modal-kyc-close" src="img/close-btn.svg" alt="" >
-            <h2>Политика AML / CTF и KYC</h2>
+            <h2>AML/CTF and KYC Policy</h2>
             <p>
-              Политика борьбы с легализацией средств, полученных преступным путем (Anti-Money Laundering Policy).
+              Anti-Money Laundering Policy.
             </p>
             <p>
-              Сервис <strong>PayFast</strong> предостерегает пользователей от попыток использования сервиса для легализации денежных средств, полученных преступным путем, финансирования терроризма, незаконных действий любого рода, а также от использования сервиса для покупки запрещенных товаров и услуг.
+              The <strong>PayFast</strong> service warns users against attempting to use the service for money laundering, terrorist financing, illegal activities of any kind, as well as against using the service to purchase prohibited goods and services.
             </p>
             <p>
-              Легализация средств, полученных преступным путем — это сокрытие незаконного источника денежных средств путем перевода их в денежные средства или инвестиции, которые выглядят законно.
+              Money laundering is the process of concealing the illicit source of funds by converting them into cash or investments that appear legitimate.
           </p>
-          <h2>Общие положения</h2>
-          <p>Для предотвращения операций незаконного характера Сервис устанавливает определенные требования ко всем Заявкам, создаваемым Пользователем:</p>
+          <h2>General provisions</h2>
+          <p>To prevent illegal transactions, the Service establishes certain requirements for all Applications created by the User:</p>
           <ul>
-            <li>Отправитель и получатель Платежа по Заявке должны быть одно и то же лицо. С использованием услуг Сервиса категорически запрещается перевод денежных средств в пользу третьих лиц.</li>
-            <li>Все контактные данные, заносимые Пользователем в Заявку, а также иные персональные данные, передаваемые Пользователем Сервису, должны быть актуальными и полностью достоверными.</li>
+            <li>The sender and recipient of the Payment under the Application must be the same person. Using the Services, the transfer of funds in favor of third parties is strictly prohibited.</li>
+            <li>All contact information entered by the User in the Application, as well as other personal data transmitted by the User to the Service, must be current and completely reliable.</li>
             <li>
-              Категорически запрещено создание Заявок Пользователем с использованием анонимных прокси-серверов или каких-либо других анонимных подключений к сети Интернет.
+              It is strictly prohibited for the User to create Applications using anonymous proxy servers or any other anonymous connections to the Internet.
             </li>
           </ul>
-            <p>Настоящая политика борьбы с легализацией средств, полученных преступным путем (далее — "Политика AML") описывает процедуры и механизмы, используемые Сервисом <strong>PayFast</strong> для противодействия легализации средств Сервис <strong>PayFast</strong> придерживается следующих правил:</p>
+            <p>This anti-money laundering policy (hereinafter referred to as the “AML Policy”) describes the procedures and mechanisms used by the <strong>PayFast</strong> Service to combat money laundering. The <strong>PayFast</strong> Service adheres to the following rules:</p>
           <ul>
-            <li>не вступать в деловые отношения с заведомо известными преступниками и/или террористами;</li>
-            <li>не обрабатывать операции, которые являются следствием заведомо известной преступной и/или террористической деятельности;</li>
-            <li>не способствовать любым сделкам, связанным с заведомо известной преступной и/или террористической деятельностью;</li>
+            <li>do not enter into business relations with known criminals and/or terrorists;</li>
+            <li>not process transactions that are the result of known criminal and/or terrorist activities;</li>
+            <li>not facilitate any transactions related to known criminal and/or terrorist activities;</li>
             <li>
-              имеет право ограничить или запретить использование всех или части сервисов для граждан таких стран, как Афганистан, Босния и Герцеговина, США, Корейская Народно-Демократическая Республика, Демократическая Республика Конго, Эритрея, Эфиопия, Гайана, Иран, Ирак, Лаосская Народно-Демократическая Республика, Ливия, Сомали, южный Судан, Шри-Ланка, Судан, Сирия, Тринидад и Тобаго, Тунис, Уганда, Вануату, Украина.
+              has the right to restrict or prohibit the use of all or part of the services for citizens of countries such as Afghanistan, Bosnia and Herzegovina, USA, Democratic People's Republic of Korea, Democratic Republic of the Congo, Eritrea, Ethiopia, Guyana, Iran, Iraq, Lao People's Democratic Republic, Libya, Somalia, southern Sudan, Sri Lanka, Sudan, Syria, Trinidad and Tobago, Tunisia, Uganda, Vanuatu, Ukraine.
             </li>
-            <li>Процедуры проверки</li>
+            <li>Verification Procedures</li>
           </ul>
           <p>
-            Сервис <strong>PayFast</strong> устанавливает собственные процедуры проверки в рамках стандартов борьбы с легализацией средств — политики "Знай своего клиента" (KYC).
-          </p>
-          <ul>
-            <li>
-              Пользователи Сервиса <strong>PayFast</strong> проходят процедуру верификации (предоставляют государственный идентификационный документ: паспорт или идентификационную карту). Сервис <strong>PayFast</strong> оставляет за собой право собирать идентификационную информацию Пользователей для целей осуществления Политики AML. Эта информация обрабатывается и хранится строго в соответствии с Политикой конфиденциальности и политикой обработки Персональных данных <strong>PayFast</strong>.
-            </li>
-            <li>
-              Также Сервис <strong>PayFast</strong> может запросить второй документ для идентификации Пользователя: банковскую выписку или счет за коммунальные услуги не старше 3 месяцев, в которых указаны полное имя Пользователя и его фактическое место жительства, сервис так же в праве запросить фото/видео верификацию клиента, при наличии подозрений о недобросовестности предоставляемой информации .
-            </li>
-            <li>
-              Сервис <strong>PayFast</strong> проверяет подлинность документов и информации, предоставленной Пользователями, и оставляет за собой право получать дополнительную информацию о Пользователях, которые были определены как опасные или подозрительные.
-            </li>
-          </ul>
-          <p>
-            Если идентификационная информация Пользователя была изменена или его деятельность показалась подозрительной, то Сервис <strong>PayFast</strong> имеет право запросить у Пользователя обновленные документы, даже если они прошли проверку подлинности в прошлом.
-          </p>
-          <h2>Ответственный за соблюдение Политики AML</h2>
-          <p>
-            Ответственный за соблюдение Политики AML является сотрудником <strong>PayFast</strong>, в обязанности которого входит обеспечение соблюдения политики AML, а именно:
+            The <strong>PayFast</strong> service establishes its own verification procedures as part of the anti-money laundering standards - the Know Your Customer (KYC) policy.
           </p>
           <ul>
             <li>
-              сбор идентификационной информации Пользователей и передача ее ответственному агенту по обработке персональных данных;
+              Users of the <strong>PayFast</strong> Service undergo a verification procedure (provide a government identification document: passport or identification card). The <strong>PayFast</strong> service reserves the right to collect User identification information for the purposes of implementing the AML Policy. This information is processed and stored strictly in accordance with the Privacy Policy and the Personal Data Processing Policy of<strong>PayFast</strong>.
             </li>
             <li>
-              создание и обновление внутренних политик и процедур для написания, рассмотрения, предоставлении и хранения всех отчетов, требуемых в соответствии с существующими законами и правилами;
+              Also, the <strong>PayFast</strong> Service may request a second document to identify the User: a bank statement or utility bill no older than 3 months, which indicates the User’s full name and his actual place of residence, the service also has the right to request a photo/ video verification of the client, if there are suspicions about the dishonesty of the information provided.
             </li>
             <li>
-              мониторинг транзакций и анализ любых существенных отклонений от нормальной деятельности Пользователей;
-            </li>
-            <li>
-              внедрение системы управления записями для хранения и поиска документов, файлов, форм и журналов;
-            </li>
-            <li>
-              регулярное обновление оценки рисков.
+              The <strong>PayFast</strong> service verifies the authenticity of documents and information provided by Users and reserves the right to receive additional information about Users who have been identified as dangerous or suspicious.
             </li>
           </ul>
           <p>
-            Ответственный за соблюдение Политики AML имеет право взаимодействовать с правоохранительными органами, которые занимаются предотвращением легализации средств, финансированием терроризма и другой незаконной деятельностью.
+            If the User's identification information has been changed or his activity seems suspicious, then the<strong>PayFast</strong>Service has the right to request updated documents from the User, even if they were authenticated in the past.
           </p>
-          <h2>Мониторинг транзакций</h2>
+          <h2>Responsible for compliance with the AML Policy</h2>
           <p>
-            Мониторинг транзакций Пользователя и анализ полученных данных также является инструментом оценки риска и обнаружения подозрительных операций. При подозрении на легализацию средств Сервис <strong>PayFast</strong> контролирует все транзакции и оставляет за собой право:
+            The AML Policy Compliance Officer is an employee of <strong>PayFast</strong>, whose responsibilities include ensuring compliance with the AML Policy, namely:
           </p>
           <ul>
             <li>
-              сообщать о подозрительных операциях соответствующим правоохранительным органам;
+              collecting identification information of Users and transferring it to the responsible agent for processing personal data;
             </li>
             <li>
-              просить Пользователя предоставить любую дополнительную информацию и документы;
+              creating and updating internal policies and procedures for writing, reviewing, submitting and maintaining all reports required by existing laws and regulations;
             </li>
             <li>
-              приостановить или прекратить действие учетной записи Пользователя.
+              monitoring transactions and analyzing any significant deviations from the normal activities of Users;
             </li>
             <li>
-              приостановить обмен и заморозить активы до выяснения обстоятельств.
+              implementing a records management system for storing and retrieving documents, files, forms and logs;
             </li>
             <li>
-              вернуть средства пользователю отменив процедуру обмена, согласно пользовательскому соглашению
-            </li>
-            <li>
-              оценка риска
+              regularly updating risk assessments.
             </li>
           </ul>
           <p>
-            Вышеприведенный список не является исчерпывающим. Ответственный за соблюдение Политики AML ежедневно отслеживает транзакции Пользователей, чтобы определить, следует ли сообщать о них и рассматривать их как подозрительные.
+            The AML Policy Compliance Officer has the right to interact with law enforcement agencies involved in preventing money laundering, terrorist financing and other illegal activities.
+          </p>
+          <h2>Transaction monitoring</h2>
+          <p>
+            Monitoring the User's transactions and analyzing the received data is also a tool for assessing risk and detecting suspicious transactions. If money laundering is suspected, the <strong>PayFast</strong> Service controls all transactions and reserves the right:
+          </p>
+          <ul>
+            <li>
+              report suspicious transactions to appropriate law enforcement authorities;
+            </li>
+            <li>
+              ask the User to provide any additional information and documents;
+            </li>
+            <li>
+              suspend or terminate the User's account.
+            </li>
+            <li>
+              suspend the exchange and freeze assets until the circumstances are clarified.
+            </li>
+            <li>
+              return funds to the user by canceling the exchange procedure, in accordance with the user agreement.
+            </li>
+            <li>
+              Risk assessment
+            </li>
+          </ul>
+          <p>
+            The above list is not exhaustive. The AML Policy Officer monitors User transactions on a daily basis to determine whether they should be reported or treated as suspicious.
           </p>
 
           <p>
-            В соответствии с международными требованиями Сервис <strong>PayFast</strong> применяет подход, основанный на оценке риска для борьбы с легализацией средств и финансированием терроризма. Таким образом меры по предотвращению легализации средств и финансирования терроризма оказываются соизмеримы с выявленными рисками
+            In accordance with international requirements, the <strong>PayFast</strong> Service uses a risk-based approach to combat money laundering and terrorist financing. Thus, measures to prevent money laundering and terrorist financing are commensurate with the identified risks.
           </p>
-          <p>Последнее обновление 09.10.2023.</p>
+          <p>Last updated 10/09/2023</p>
       </div>
       </div>
     
       <script src='js/index.js'></script>
+      <script src='js/translations.js'></script>
     </body>
     </html>
     

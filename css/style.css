@@ -93,13 +93,13 @@ body {
     transition: 0.3s;
   }
 
-  .country-icon{
+  .network-icon{
     cursor: pointer;
     color: black;
     transition: 0.3s;
   }
 
-  .country-icon:hover{
+  .network-icon:hover{
     color: #0030D0;
     transition: 0.3s;
   }
@@ -671,3 +671,117 @@ footer{
  strong {
   color: #0030D0;
 }
+
+/* Выпадающий список (языки) */
+
+.language-selector {
+  position: relative;
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: 33px;
+  left: -20px;
+  background: #fff;
+  box-shadow: 0 1px 6px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+  display: none;
+  padding: 0px 14px 1px 10px;
+  list-style: none;
+}
+
+.lang-option:hover {
+  background: #f0f0f0;
+}
+
+.arrow-indicator-ru {
+  display: block; 
+  content: '';
+  width: 9px;
+  height: 9px;
+  background-color: #C2C2C2;
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  position: absolute;
+  right: 5px;
+  top: 13px;
+  transform: translateY(0px);
+}
+
+.arrow-indicator-en {
+  display: block; 
+  content: '';
+  width: 9px;
+  height: 9px;
+  background-color: #C2C2C2;
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  position: absolute;
+  right: 5px;
+  top: 13px;
+  transform: translateY(40px);
+}
+
+.arrow-indicator-tr {
+  display: block; 
+  content: '';
+  width: 9px;
+  height: 9px;
+  background-color: #C2C2C2;
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  position: absolute;
+  right: 5px;
+  top: 13px;
+  transform: translateY(80px);
+}
+
+.lang-dropdown.active {
+  display: block;
+}
+
+.language-selector.active .lang-dropdown {
+  display: block;
+}
+
+.lang-option.active .arrow-indicator {
+  display: block;
+}
+
+.network{
+  position: relative;
+  text-align: center;
+}
+
+.dropdown-network {
+  position: absolute;
+  top: 33px;
+  left: -37px;
+  background: #fff;
+  box-shadow: 0 1px 6px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+  display: none;
+  padding: 0px 14px 1px 10px;
+  list-style: none;
+}
+
+.dropdown-network.active {
+  display: block;
+}
+
+.title-network {
+  color: #9F9F9F;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.subtitle-network > a {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.subtitle-network > a:hover {
+  color: #0030D0;
+  transition: 0.3s;
+}
+

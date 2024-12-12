@@ -552,5 +552,4 @@ buttonToQuestionnaire.addEventListener('click', function(event){
         });
     })
 
-
 })

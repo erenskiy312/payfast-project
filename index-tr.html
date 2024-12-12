@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayFast Exchange</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <img class="hat-icon" src="img/hat-icon.svg" alt="">
+        <img class="logo" src="img/logo.svg" alt="">
+        <ul class="nav-links">
+          <li>
+            <svg id="openModalPromo" class="gift-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.5877 3.98498H0.41272V7.17793H19.5877V3.98498Z" fill="#469BB5"/>
+                <path d="M19.5873 7.63153H0.412659C0.303215 7.63153 0.198254 7.58374 0.120865 7.49866C0.0434766 7.41359 0 7.29821 0 7.17789V3.98496C0 3.86464 0.0434766 3.74926 0.120865 3.66418C0.198254 3.57911 0.303215 3.53131 0.412659 3.53131H19.5873C19.6968 3.53131 19.8018 3.57911 19.8791 3.66418C19.9565 3.74926 20 3.86464 20 3.98496V7.17789C20 7.29821 19.9565 7.41359 19.8791 7.49866C19.8018 7.58374 19.6968 7.63153 19.5873 7.63153ZM0.825318 6.72425H19.1747V4.4386H0.825318V6.72425Z" fill="black"/>
+                <path d="M17.7474 7.17794H2.25305V19.546H17.7474V7.17794Z" fill="#4DBAB5"/>
+                <path d="M17.7474 20H2.25299C2.14355 20 2.03859 19.9522 1.9612 19.8671C1.88381 19.7821 1.84033 19.6667 1.84033 19.5464V7.17794C1.84033 7.05762 1.88381 6.94224 1.9612 6.85716C2.03859 6.77209 2.14355 6.72429 2.25299 6.72429H17.7474C17.8568 6.72429 17.9618 6.77209 18.0392 6.85716C18.1165 6.94224 18.16 7.05762 18.16 7.17794V19.5464C18.16 19.6667 18.1165 19.7821 18.0392 19.8671C17.9618 19.9522 17.8568 20 17.7474 20ZM2.66565 19.0927H17.3347V7.63158H2.66565V19.0927Z" fill="black"/>
+                <path d="M12.1713 3.98498H7.82886V7.17793H12.1713V3.98498Z" fill="#4161B5"/>
+                <path d="M12.1714 7.63153H7.82892C7.71948 7.63153 7.61451 7.58374 7.53713 7.49866C7.45974 7.41359 7.41626 7.29821 7.41626 7.17789V3.98496C7.41626 3.86464 7.45974 3.74926 7.53713 3.66418C7.61451 3.57911 7.71948 3.53131 7.82892 3.53131H12.1714C12.2808 3.53131 12.3858 3.57911 12.4632 3.66418C12.5405 3.74926 12.584 3.86464 12.584 3.98496V7.17789C12.584 7.29821 12.5405 7.41359 12.4632 7.49866C12.3858 7.58374 12.2808 7.63153 12.1714 7.63153ZM8.24158 6.72425H11.7587V4.4386H8.24158V6.72425Z" fill="black"/>
+                <path d="M11.5544 7.49025H8.44678V19.546H11.5544V7.49025Z" fill="#4161B5"/>
+                <path d="M11.5545 20H8.44684C8.33739 20 8.23243 19.9522 8.15504 19.8671C8.07766 19.7821 8.03418 19.6667 8.03418 19.5464V7.49025C8.03418 7.36994 8.07766 7.25455 8.15504 7.16948C8.23243 7.0844 8.33739 7.03661 8.44684 7.03661H11.5545C11.6639 7.03661 11.7689 7.0844 11.8463 7.16948C11.9237 7.25455 11.9671 7.36994 11.9671 7.49025V19.5464C11.9671 19.6667 11.9237 19.7821 11.8463 19.8671C11.7689 19.9522 11.6639 20 11.5545 20ZM8.8595 19.0927H11.1418V7.94389H8.8595V19.0927Z" fill="black"/>
+                <path d="M9.83569 3.98494L13.7772 0.453499L16.1884 2.61389L14.6584 3.98494" fill="#4161B5"/>
+                <path d="M14.6594 4.43871C14.5742 4.43879 14.491 4.40985 14.4213 4.35587C14.3517 4.3019 14.2989 4.22553 14.2703 4.13727C14.2417 4.049 14.2387 3.95317 14.2616 3.86293C14.2846 3.7727 14.3324 3.69249 14.3985 3.63332L15.5361 2.61402L13.7779 1.03988L10.0957 4.33751C10.0539 4.37677 10.0054 4.40645 9.95295 4.4248C9.90055 4.44315 9.84535 4.4498 9.79057 4.44436C9.7358 4.43893 9.68257 4.42151 9.63401 4.39313C9.58545 4.36476 9.54254 4.326 9.5078 4.27913C9.47306 4.23226 9.44719 4.17824 9.43172 4.12023C9.41624 4.06222 9.41147 4.00139 9.41768 3.94132C9.42389 3.88125 9.44096 3.82315 9.46789 3.77044C9.49482 3.71773 9.53106 3.67146 9.57448 3.63437L13.516 0.102935C13.5896 0.037016 13.6817 0.00102234 13.7766 0.00102234C13.8716 0.00102234 13.9636 0.037016 14.0372 0.102935L16.4497 2.26332C16.4972 2.30586 16.5355 2.3595 16.5618 2.42034C16.5881 2.48118 16.6018 2.5477 16.6018 2.61507C16.6018 2.68243 16.5881 2.74895 16.5618 2.80979C16.5355 2.87064 16.4972 2.92427 16.4497 2.96681L14.9194 4.33751C14.846 4.40325 14.7541 4.43901 14.6594 4.43871Z" fill="black"/>
+                <path d="M9.83555 3.98494L5.89404 0.453499L3.48254 2.61389L5.01286 3.98494" fill="#4161B5"/>
+                <path d="M5.01165 4.43875C4.91667 4.43866 4.82462 4.40254 4.75104 4.33651L3.22104 2.9658C3.17352 2.92326 3.13522 2.86962 3.10892 2.80878C3.08262 2.74794 3.06897 2.68142 3.06897 2.61405C3.06897 2.54669 3.08262 2.48017 3.10892 2.41933C3.13522 2.35849 3.17352 2.30485 3.22104 2.26231L5.6335 0.101913C5.70711 0.0359938 5.79916 0 5.8941 0C5.98905 0 6.0811 0.0359938 6.15471 0.101913L10.0962 3.63336C10.1396 3.67046 10.1759 3.71672 10.2028 3.76943C10.2297 3.82215 10.2468 3.88024 10.253 3.94031C10.2592 4.00038 10.2545 4.06121 10.239 4.11922C10.2235 4.17723 10.1976 4.23126 10.1629 4.27813C10.1282 4.32499 10.0853 4.36375 10.0367 4.39213C9.98813 4.4205 9.93491 4.43792 9.88014 4.44336C9.82536 4.4488 9.77016 4.44215 9.71776 4.4238C9.66536 4.40545 9.61682 4.37577 9.57501 4.33651L5.89283 1.03886L4.1346 2.61405L5.27226 3.63336C5.33833 3.69251 5.38612 3.77269 5.40907 3.86289C5.43203 3.95309 5.42902 4.04889 5.40046 4.13714C5.37191 4.22539 5.31921 4.30176 5.24959 4.35576C5.17997 4.40977 5.09686 4.43876 5.01165 4.43875Z" fill="black"/>
+                <path opacity="0.6" d="M17.4502 18.5239V7.49025H2.22119L17.4502 18.5239Z" fill="#124379"/>
+                <path opacity="0.6" d="M19.3866 6.87164H0.743896V4.86166L6.63256 5.55608L19.3866 6.87164Z" fill="#124379"/>
+                <path d="M6.98007 3.18985C6.90848 3.19003 6.83897 3.16345 6.78294 3.11448L5.74336 2.20719C5.67948 2.14897 5.63889 2.06557 5.63026 1.97484C5.62163 1.88412 5.64566 1.79329 5.6972 1.72181C5.74874 1.65032 5.8237 1.60387 5.90601 1.59238C5.98833 1.5809 6.07146 1.60531 6.13761 1.66037L7.17751 2.56766C7.22908 2.6127 7.26664 2.67426 7.28496 2.74382C7.30328 2.81337 7.30147 2.88746 7.27978 2.95583C7.25808 3.0242 7.21757 3.08346 7.16387 3.12539C7.11017 3.16732 7.04593 3.18985 6.98007 3.18985Z" fill="#8ECFB5"/>
+                <path d="M14.5867 3.18982C14.5151 3.19001 14.4456 3.16343 14.3896 3.11445L13.35 2.20716C13.2841 2.14964 13.2416 2.06567 13.2319 1.97373C13.2223 1.88178 13.2463 1.78939 13.2986 1.71688C13.3509 1.64437 13.4273 1.59767 13.5109 1.58707C13.5946 1.57647 13.6786 1.60283 13.7446 1.66035L14.7841 2.56763C14.8357 2.61267 14.8733 2.67424 14.8916 2.74379C14.9099 2.81334 14.9081 2.88744 14.8864 2.95581C14.8647 3.02418 14.8242 3.08343 14.7705 3.12536C14.7168 3.16729 14.6526 3.18982 14.5867 3.18982Z" fill="#8ECFB5"/>
+                <path d="M19.5873 7.63153H0.412659C0.303215 7.63153 0.198254 7.58374 0.120865 7.49866C0.0434766 7.41359 0 7.29821 0 7.17789V3.98496C0 3.86464 0.0434766 3.74926 0.120865 3.66418C0.198254 3.57911 0.303215 3.53131 0.412659 3.53131H19.5873C19.6968 3.53131 19.8018 3.57911 19.8791 3.66418C19.9565 3.74926 20 3.86464 20 3.98496V7.17789C20 7.29821 19.9565 7.41359 19.8791 7.49866C19.8018 7.58374 19.6968 7.63153 19.5873 7.63153ZM0.825318 6.72425H19.1747V4.4386H0.825318V6.72425Z" fill="#690A3F"/>
+                <path d="M17.7474 20H2.25299C2.14355 20 2.03859 19.9522 1.9612 19.8671C1.88381 19.7821 1.84033 19.6667 1.84033 19.5464V7.17794C1.84033 7.05762 1.88381 6.94224 1.9612 6.85716C2.03859 6.77209 2.14355 6.72429 2.25299 6.72429H17.7474C17.8568 6.72429 17.9618 6.77209 18.0392 6.85716C18.1165 6.94224 18.16 7.05762 18.16 7.17794V19.5464C18.16 19.6667 18.1165 19.7821 18.0392 19.8671C17.9618 19.9522 17.8568 20 17.7474 20ZM2.66565 19.0927H17.3347V7.63158H2.66565V19.0927Z" fill="#690A3F"/>
+                <path d="M12.1714 7.63153H7.82892C7.71948 7.63153 7.61451 7.58374 7.53713 7.49866C7.45974 7.41359 7.41626 7.29821 7.41626 7.17789V3.98496C7.41626 3.86464 7.45974 3.74926 7.53713 3.66418C7.61451 3.57911 7.71948 3.53131 7.82892 3.53131H12.1714C12.2808 3.53131 12.3858 3.57911 12.4632 3.66418C12.5405 3.74926 12.584 3.86464 12.584 3.98496V7.17789C12.584 7.29821 12.5405 7.41359 12.4632 7.49866C12.3858 7.58374 12.2808 7.63153 12.1714 7.63153ZM8.24158 6.72425H11.7587V4.4386H8.24158V6.72425Z" fill="#690A3F"/>
+                <path d="M11.5545 20H8.44684C8.33739 20 8.23243 19.9522 8.15504 19.8671C8.07766 19.7821 8.03418 19.6667 8.03418 19.5464V7.49025C8.03418 7.36994 8.07766 7.25455 8.15504 7.16948C8.23243 7.0844 8.33739 7.03661 8.44684 7.03661H11.5545C11.6639 7.03661 11.7689 7.0844 11.8463 7.16948C11.9237 7.25455 11.9671 7.36994 11.9671 7.49025V19.5464C11.9671 19.6667 11.9237 19.7821 11.8463 19.8671C11.7689 19.9522 11.6639 20 11.5545 20ZM8.8595 19.0927H11.1418V7.94389H8.8595V19.0927Z" fill="#690A3F"/>
+                <path d="M14.6594 4.43871C14.5742 4.43879 14.491 4.40985 14.4213 4.35587C14.3517 4.3019 14.2989 4.22553 14.2703 4.13727C14.2417 4.049 14.2387 3.95317 14.2616 3.86293C14.2846 3.7727 14.3324 3.69249 14.3985 3.63332L15.5361 2.61402L13.7779 1.03988L10.0957 4.33751C10.0539 4.37677 10.0054 4.40645 9.95295 4.4248C9.90055 4.44315 9.84535 4.4498 9.79057 4.44436C9.7358 4.43893 9.68257 4.42151 9.63401 4.39313C9.58545 4.36476 9.54254 4.326 9.5078 4.27913C9.47306 4.23226 9.44719 4.17824 9.43172 4.12023C9.41624 4.06222 9.41147 4.00139 9.41768 3.94132C9.42389 3.88125 9.44096 3.82315 9.46789 3.77044C9.49482 3.71773 9.53106 3.67146 9.57448 3.63437L13.516 0.102935C13.5896 0.037016 13.6817 0.00102234 13.7766 0.00102234C13.8716 0.00102234 13.9636 0.037016 14.0372 0.102935L16.4497 2.26332C16.4972 2.30586 16.5355 2.3595 16.5618 2.42034C16.5881 2.48118 16.6018 2.5477 16.6018 2.61507C16.6018 2.68243 16.5881 2.74895 16.5618 2.80979C16.5355 2.87064 16.4972 2.92427 16.4497 2.96681L14.9194 4.33751C14.846 4.40325 14.7541 4.43901 14.6594 4.43871Z" fill="#690A3F"/>
+                <path d="M5.01165 4.43875C4.91667 4.43866 4.82462 4.40254 4.75104 4.33651L3.22104 2.9658C3.17352 2.92326 3.13522 2.86962 3.10892 2.80878C3.08262 2.74794 3.06897 2.68142 3.06897 2.61405C3.06897 2.54669 3.08262 2.48017 3.10892 2.41933C3.13522 2.35849 3.17352 2.30485 3.22104 2.26231L5.6335 0.101913C5.70711 0.0359938 5.79916 0 5.8941 0C5.98905 0 6.0811 0.0359938 6.15471 0.101913L10.0962 3.63336C10.1396 3.67046 10.1759 3.71672 10.2028 3.76943C10.2297 3.82215 10.2468 3.88024 10.253 3.94031C10.2592 4.00038 10.2545 4.06121 10.239 4.11922C10.2235 4.17723 10.1976 4.23126 10.1629 4.27813C10.1282 4.32499 10.0853 4.36375 10.0367 4.39213C9.98813 4.4205 9.93491 4.43792 9.88014 4.44336C9.82536 4.4488 9.77016 4.44215 9.71776 4.4238C9.66536 4.40545 9.61682 4.37577 9.57501 4.33651L5.89283 1.03886L4.1346 2.61405L5.27226 3.63336C5.33833 3.69251 5.38612 3.77269 5.40907 3.86289C5.43203 3.95309 5.42902 4.04889 5.40046 4.13714C5.37191 4.22539 5.31921 4.30176 5.24959 4.35576C5.17997 4.40977 5.09686 4.43876 5.01165 4.43875Z" fill="#690A3F"/>
+                </svg>
+          </li>
+
+          <li>
+            <svg class="country-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5C0 2.23858 2.23858 0 5 0H15C17.7614 0 20 2.23858 20 5V15C20 17.7614 17.7614 20 15 20H5C2.23858 20 0 17.7614 0 15V5ZM5 2C3.34315 2 2 3.34315 2 5V15C2 16.6569 3.34315 18 5 18H15C16.6569 18 18 16.6569 18 15V5C18 3.34315 16.6569 2 15 2H5Z" fill="currentColor" fill-opacity="0.94902"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 6C8.89543 6 8 6.89543 8 8C8 9.10457 8.89543 10 10 10C11.1046 10 12 9.10457 12 8C12 6.89543 11.1046 6 10 6ZM6 8C6 5.79086 7.79086 4 10 4C12.2091 4 14 5.79086 14 8C14 10.2091 12.2091 12 10 12C7.79086 12 6 10.2091 6 8Z" fill="currentColor" fill-opacity="0.94902"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15C7.44286 15 5.25694 16.6001 4.39366 18.8572L2.52563 18.1428C3.6752 15.1371 6.58679 13 10 13C13.4132 13 16.3248 15.1371 17.4744 18.1428L15.6064 18.8572C14.7431 16.6001 12.5572 15 10 15Z" fill="currentColor" fill-opacity="0.94902"/>
+                </svg>
+          </li>
+
+          <div class="language-selector">
+
+            <li>
+                <svg id="lang-toggle" class="language-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6206 2.00706C11.7465 2.00237 11.873 2 12 2C12.127 2 12.2535 2.00237 12.3794 2.00706C12.4959 1.99298 12.6135 1.99971 12.7265 2.02599C17.9102 2.39815 22 6.72146 22 12C22 17.2785 17.9102 21.6019 12.7265 21.974C12.6135 22.0003 12.4959 22.007 12.3794 21.9929C12.2535 21.9976 12.127 22 12 22C11.873 22 11.7465 21.9976 11.6206 21.9929C11.504 22.007 11.3865 22.0003 11.2735 21.974C6.08979 21.6018 2 17.2785 2 12C2 6.72147 6.08979 2.39817 11.2735 2.02599C11.3865 1.99971 11.504 1.99298 11.6206 2.00706ZM14.3753 19.6415C16.3116 19.0402 17.9329 17.7233 18.9297 16H15.6277C15.3421 17.2534 14.9225 18.4743 14.3753 19.6415ZM13.5697 16C13.2202 17.3536 12.6937 18.6602 12 19.885C11.3063 18.6602 10.7797 17.3536 10.4302 16H13.5697ZM15.9663 14H19.748C19.9125 13.3608 20 12.6906 20 12C20 11.3094 19.9125 10.6392 19.748 10H15.9663C16.0404 10.662 16.0778 11.3297 16.0778 12C16.0778 12.6703 16.0404 13.338 15.9663 14ZM13.9523 10C14.0356 10.6611 14.0778 11.3291 14.0778 12C14.0778 12.6709 14.0356 13.3389 13.9523 14H10.0477C9.96437 13.3389 9.92218 12.6709 9.92218 12C9.92218 11.3291 9.96437 10.6611 10.0477 10H13.9523ZM15.6277 8H18.9297C17.9329 6.27669 16.3116 4.95975 14.3753 4.35852C14.9225 5.52565 15.3421 6.74663 15.6277 8ZM13.5697 8H10.4302C10.7797 6.64643 11.3063 5.33979 12 4.11504C12.6937 5.33979 13.2202 6.64643 13.5697 8ZM9.62469 4.35853C7.68839 4.95976 6.06714 6.2767 5.07026 8H8.37225C8.65792 6.74663 9.07745 5.52566 9.62469 4.35853ZM8.03363 10H4.25203C4.08751 10.6392 4 11.3094 4 12C4 12.6906 4.08751 13.3608 4.25204 14H8.03363C7.95961 13.338 7.92218 12.6703 7.92218 12C7.92218 11.3297 7.95961 10.662 8.03363 10ZM8.37225 16C8.65792 17.2534 9.07746 18.4743 9.62469 19.6415C7.68839 19.0402 6.06714 17.7233 5.07026 16H8.37225Z" fill="currentColor"/>
+                </svg>
+            </li>
+            <ul class="lang-dropdown">
+                <li class="lang-option" data-lang="ru">
+                    <a href="index-ru.html">
+                        <img src="img/RU-lang-icon.svg" alt="Russian">
+                    </a>
+                </li>
+
+                <li class="lang-option" data-lang="en">
+                    <a href="index-en.html">
+                        <img src="img/US-lang-icon.svg" alt="English">
+                    </a>
+                </li>
+
+                <li class="lang-option" data-lang="tr">
+                    <a href="index-tr.html">
+                        <img src="img/TR-lang-icon.svg" alt="Turkish">
+                    </a>
+                  <span class="arrow-indicator-tr"></span>
+                </li>
+              </ul>
+          </div>
+          <li class="separator"></li>
+          <li><a  class="nav-reviews"  href="https://review.payfast.exchange/">Hizmet incelemeleri</a></li>
+          <li><button onClick="window.location.href='https://convert.payfast.exchange/'">Transfer yap</button></li>
+        </ul>
+      </nav>
+
+      <div class="introduction">
+        <div class="container">
+
+            <h1> Sınır Tanımayan Para <br>
+                <span class="highlight">Transferleri</span>
+            </h1>
+                <p id="introduction-descr">
+                    Hizmetimiz, dünya çapında hızlı ve güvenilir para transferleri <br>
+                    sağlar. Minimum ücretlerle yüksek kaliteli hizmeti garanti <br>
+                    ediyoruz!
+                </p>
+                    <button 
+                    onClick="window.location.href='https://convert.payfast.exchange/'"
+                    class="transfer-btn">Gönder</button>
+                    <button class="convertion-btn">Şimdi dönüştür</button>
+                </div>
+                <div class="globe-wrapper">
+                    <img class="globe" src="img/globe.svg" alt="">
+                </div>
+        </div>
+        </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="features">
+            <h1>Neden bizi seçmelisiniz</h1> 
+            <div class="features-grid">
+
+                <div>
+                  <div class="feature">
+                      <img src="img/feature-first-icon.svg" alt="">
+                      <h3>Anlık kur hesaplama</h3>
+                        <p>Güncel döviz kurunu ve transfer <br>
+                         miktarını gerçek zamanlı olarak <br>
+                         öğrenin
+                        </p>
+                   </div>
+                </div>
+
+                <div>
+                    <div class="feature">
+                        <img src="img/feature-second-icon.svg" alt="">
+                        <h3>Kullanım kolaylığı</h3>
+                        <p>Arayüz sezgiseldir, hizmetimizi ilk <br>
+                           kez kullanıyor olsanız bile
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="feature" id="feature-third">
+                        <img src="img/feature-third-icon.svg" alt="">
+                        <h3>Hızlı başvuru işlemi</h3>
+                        <p>Transferler 30 dakika içinde bir <br>
+                           yönetici tarafından işlenir
+                        </p>
+                    </div>
+                </div>
+
+                <div> 
+                    <div class="feature" id="feature-fourth">
+                        <img src="img/feature-fourth-icon.svg" alt="">
+                        <h3>Şeffaf ücretler</h3>
+                        <p>Tüm ücret bilgileri onay ekranında <br>
+                           önceden sağlanır
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+</main>
+    <section class="process">
+        <h1 class="process__title">Nasıl çalışır</h1>
+        <div class="process__steps">
+          <!-- Шаг 1 -->
+          <div class="step">
+            <img src="img/step-first-icon.svg" alt="">
+            <div class="step__content">
+              <h3 class="step__title">Para birimi dönüştürme</h3>
+              <p class="step__description">
+                Transfer Ukrayna’ya <br>
+                yönlendirilecekse, örneğin RUB- <br>
+                UAH gibi istediğiniz para birimi <br>
+                çiftini seçin
+              </p>
+            </div>
+            <img class="pointer-first" src="img/pointer-first.svg" alt="">
+        </div>
+          <!-- Шаг 2 -->
+          <div class="step">     
+            <img src="img/step-second-icon.svg" alt="">
+            <div class="step__content">
+              <h3 class="step__title">Başvuru formunu doldurma</h3>
+              <p class="step__description">
+                Gönderenin ve alıcının bilgilerini içeren formu <br>
+                doldurun
+              </p>
+            </div>
+        </div>
+        <!-- Шаг 3 -->
+        <div class="step">  
+            <img class="pointer-second" src="img/pointer-second.svg" alt="">
+            <img src="img/step-third-icon.svg" alt="">
+            <div class="step__content">
+              <h3 class="step__title">Başvuru için ödeme</h3>
+              <p class="step__description">
+                'den sonra uygun bir ödeme yöntemi seçin <br>
+                neden bir istek bırakın ve sizinle iletişime geçsin <br>
+                yöneticinin ödemeyi kabul etmesi
+              </p>
+            </div>
+          </div>
+          <!-- Шаг 4 -->
+          <div class="step">
+            <img class="pointer-third" src="img/pointer-third.svg" alt="">
+            <img src="img/step-fourth-icon.svg" alt="">
+            <div class="step__content">
+              <h3 class="step__title">Başvurunun ödenmesi</h3>
+              <p class="step__description">
+                Uygun bir ödeme yöntemi seçin, <br>
+                ardından başvuruyu gönderin ve <br>
+                ödemeyi onaylamak için bir yönetici <br>
+                sizinle iletişime geçecektir
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="help">
+        <div class="help-content">
+            <h1 class="help-title">Yardıma mı ihtiyacınız var?</h1>
+            <p class="help-descr">
+                Bize yazın, çevrimiçiyiz! Destek uzmanı tüm sorularınızı <br>
+                yanıtlayacaktır.
+            </p>
+
+                <button class="help-btn">Sohbeti aç</button>
+            <img class="help-icon" src="img/help-icon.svg" alt="">
+        </div>
+      </section>
+
+      <section class="hero">
+        <h1 class="hero-title">Kolay ödeme, gereksiz formaliteler yok</h1>
+        <div class="hero-buttons">
+            <button 
+            onClick="window.location.href='https://t.me/payfastexchange'"
+            class="hero-btn-telegram">TELEGRAM</button>
+            <button 
+            onClick="window.location.href='https://convert.payfast.exchange/'" 
+            class="hero-btn-convertion">TRANSFER YAP</button>
+        </div>
+      </section>
+
+      <div class="footer-line"></div>
+      <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/footer-payfast-logo.svg" alt="">
+            </div>
+              <div class="footer-info">
+                <p class="footer-descr">© 2021 Payfast Exchange. 100.000’den fazla memnun müşteri.</p>
+                <a href="#" id="openModalKYC" class="footer-political">AML/KYC</a>
+            </div>
+            <div class="footer-icons">
+
+                <svg onClick="window.location.href='https://t.me/victoria_support'" class="footer-tg-icon" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="39" height="39" fill="currentColor"/>
+                    <g clip-path="url(#clip0_0_1)">
+                    <rect width="1440" height="3408" transform="translate(-1113 -3258)" fill="white"/>
+                    <rect width="1440" height="510" transform="translate(-1112 -360)" fill="white"/>
+                    <rect opacity="0.25" x="0.5" y="0.5" width="38" height="38" rx="19" stroke="#0A142F"/>
+                    <path d="M10.4204 19.2935C10.4571 19.2713 10.4939 19.2502 10.5297 19.2302C11.1525 18.8817 11.7836 18.5554 12.4137 18.229C12.4477 18.229 12.5046 18.1813 12.5368 18.1657C12.5855 18.1402 12.6342 18.1158 12.6829 18.0903C12.7766 18.0414 12.8703 17.9937 12.963 17.9449C13.1504 17.8483 13.3369 17.7517 13.5243 17.6551L14.6459 17.0746C15.3936 16.6883 16.1423 16.3009 16.89 15.9147C17.6378 15.5284 18.3864 15.141 19.1341 14.7547C19.8819 14.3684 20.6305 13.9811 21.3782 13.5948C22.126 13.2085 22.8747 12.8211 23.6224 12.4348C23.7887 12.3483 23.9687 12.2195 24.1469 12.1818C24.2966 12.1496 24.4427 12.0874 24.5933 12.053C24.879 11.9875 25.1941 11.9609 25.4678 12.1041C25.5624 12.154 25.6497 12.2239 25.7223 12.3116C26.0695 12.7268 26.0208 13.4083 25.9473 13.9922C25.4357 18.0614 24.924 22.1318 24.4114 26.201C24.3416 26.7593 24.2461 27.3721 23.8814 27.725C23.5728 28.0236 23.1337 28.0569 22.7525 27.9304C22.3712 27.8027 22.035 27.5352 21.7053 27.2722C20.3375 26.1777 18.9688 25.0832 17.601 23.9888C17.2758 23.729 16.9139 23.3894 16.9176 22.9176C16.9194 22.6335 17.06 22.3804 17.2033 22.1551C18.3919 20.2814 20.1069 18.9938 21.3828 17.2067C21.5629 16.9547 21.7044 16.4996 21.4573 16.3542C21.3103 16.2677 21.1412 16.3853 21.0071 16.4974C19.3206 17.9127 17.635 19.329 15.9485 20.7443C15.3982 21.206 14.8213 21.6811 14.1581 21.7943C13.5647 21.8964 12.9676 21.6966 12.3935 21.4924C11.9122 21.3215 11.4317 21.1461 10.9531 20.9652C10.6987 20.8697 10.436 20.7665 10.2394 20.55C10.0428 20.3336 9.92985 19.9695 10.0483 19.6809C10.1227 19.5 10.267 19.3856 10.4185 19.2924L10.4204 19.2935Z" fill="currentColor"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_0_1">
+                    <rect width="1440" height="3408" fill="white" transform="translate(-1113 -3258)"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+                    
+                <svg onClick="window.location.href='https://wa.me/+35795909400'"class="footer-wa-icon" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="39" height="39" fill="#1E1E1E"/>
+                        <g clip-path="url(#clip0_0_1)">
+                        <rect width="1440" height="3408" transform="translate(-1166 -3258)" fill="white"/>
+                        <rect width="1440" height="510" transform="translate(-1165 -360)" fill="white"/>
+                        <rect opacity="0.25" x="0.5" y="0.5" width="38" height="38" rx="19" stroke="#0A142F"/>
+                        <path d="M22.3953 23.7135C19.2517 23.7135 16.6942 21.0685 16.6934 17.8185C16.6942 16.9946 17.3431 16.3247 18.1382 16.3247C18.22 16.3247 18.3008 16.3318 18.3783 16.3461C18.5487 16.3754 18.7105 16.435 18.8593 16.5249C18.8809 16.5382 18.8955 16.5596 18.8989 16.5845L19.2311 18.7491C19.2354 18.774 19.2276 18.7998 19.2113 18.8185C19.028 19.0284 18.7939 19.1797 18.5332 19.2553L18.4076 19.2918L18.4549 19.4172C18.8834 20.5453 19.756 21.4466 20.848 21.8914L20.9694 21.9413L21.0047 21.8114C21.0778 21.5418 21.2241 21.2998 21.4272 21.1103C21.4418 21.0961 21.4616 21.0889 21.4814 21.0889C21.4857 21.0889 21.49 21.0889 21.4952 21.0898L23.5889 21.4333C23.6138 21.4377 23.6345 21.4519 23.6474 21.4742C23.7334 21.6281 23.7911 21.7962 23.8203 21.9724C23.8341 22.0507 23.8401 22.1334 23.8401 22.2197C23.8401 23.0427 23.1921 23.7126 22.3953 23.7135Z" fill="currentColor"/>
+                        <path d="M27.9699 19.2865C27.8004 17.3061 26.9226 15.4689 25.4984 14.1139C24.0656 12.7509 22.2069 12 20.2629 12C15.9963 12 12.5249 15.589 12.5249 20C12.5249 21.4804 12.9199 22.9226 13.6677 24.1788L12 27.9955L17.3396 27.4075C18.2682 27.8007 19.2509 28 20.262 28C20.5279 28 20.8007 27.9858 21.0744 27.9564C21.3153 27.9297 21.5589 27.8906 21.7981 27.8407C25.3711 27.0943 27.9793 23.8158 28 20.0427V20C28 19.7598 27.9897 19.5196 27.969 19.2874L27.9699 19.2865ZM17.5453 25.7322L14.5911 26.0578L15.4731 24.0374L15.2967 23.7927C15.2838 23.7749 15.2709 23.7571 15.2563 23.7367C14.4904 22.6432 14.0859 21.3514 14.0859 20.0009C14.0859 16.4795 16.8569 13.6148 20.2629 13.6148C23.4538 13.6148 26.1584 16.1886 26.4192 19.4742C26.433 19.6504 26.4407 19.8274 26.4407 20.0018C26.4407 20.0516 26.4398 20.1005 26.439 20.153C26.3736 23.0988 24.3832 25.6005 21.5985 26.2375C21.3859 26.2865 21.1682 26.3238 20.9513 26.3479C20.7259 26.3746 20.4944 26.3879 20.2646 26.3879C19.4462 26.3879 18.6511 26.2242 17.8999 25.9004C17.8164 25.8657 17.7346 25.8283 17.658 25.79L17.5462 25.734L17.5453 25.7322Z" fill="currentColor"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_0_1">
+                        <rect width="1440" height="3408" fill="white" transform="translate(-1166 -3258)"/>
+                        </clipPath>
+                        </defs>
+                </svg>
+                        
+                <svg onclick="window.location.href='https://review.payfast.exchange/'" class="footer-review-icon" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="39" height="39" fill="#1E1E1E"/>
+                            <g clip-path="url(#clip0_0_1)">
+                            <rect width="1440" height="3408" transform="translate(-1219 -3258)" fill="white"/>
+                            <rect width="1440" height="510" transform="translate(-1218 -360)" fill="white"/>
+                            <rect opacity="0.25" x="0.5" y="0.5" width="38" height="38" rx="19" stroke="#0A142F"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20C28 24.4183 24.4183 28 20 28C15.5817 28 12 24.4183 12 20ZM20 13.6C16.4654 13.6 13.6 16.4654 13.6 20C13.6 23.5346 16.4654 26.4 20 26.4C23.5346 26.4 26.4 23.5346 26.4 20C26.4 16.4654 23.5346 13.6 20 13.6Z" fill="currentColor"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9719 16.1569C19.4383 15.3819 20.5618 15.3819 21.0282 16.1569L21.8274 17.4848L23.3372 17.8345C24.2184 18.0386 24.5656 19.1072 23.9727 19.7902L22.9567 20.9606L23.0907 22.5047C23.1689 23.4058 22.2599 24.0662 21.4271 23.7134L20 23.1088L18.573 23.7134C17.7401 24.0662 16.8312 23.4058 16.9094 22.5047L17.0434 20.9606L16.0274 19.7902C15.4345 19.1072 15.7816 18.0386 16.6628 17.8345L18.1727 17.4848L18.9719 16.1569ZM20 17.5514L19.4562 18.4551C19.2887 18.7335 19.0154 18.932 18.6988 19.0053L17.6714 19.2433L18.3627 20.0397C18.5757 20.2851 18.6801 20.6064 18.652 20.9301L18.5608 21.9808L19.5319 21.5694C19.8311 21.4427 20.1689 21.4427 20.4681 21.5694L21.4392 21.9808L21.348 20.9301C21.32 20.6064 21.4243 20.2851 21.6374 20.0397L22.3287 19.2433L21.3013 19.0053C20.9847 18.932 20.7114 18.7335 20.5438 18.4551L20 17.5514Z" fill="currentColor"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_0_1">
+                            <rect width="1440" height="3408" fill="white" transform="translate(-1219 -3258)"/>
+                            </clipPath>
+                            </defs>
+                </svg>
+                            
+            </div>
+        </div>
+      </footer>
+
+      <!-- PROMO MODAL -->
+      <div id="modal-promo" class="modal-promo-overlay">
+        <div class="modal-promo-content">
+          <img id="closeModalPromo" class="modal-promo-close" src="img/close-btn.svg" alt="">
+          <h3 class="modal-promo-title">
+            Promosyon kodunu kullanarak  <br>
+            <a href="https://convert.payfast.exchange/">dönüştürücü</a> sayfasında %5 komisyonu ödeyin
+          </h3>
+          <div id="promo-code" class="promo-code">PAYBONUS</div>
+          <button id="copyBtn" class="copy-promo-btn" >Kopyala</button>
+        </div>
+      </div>
+
+      <!-- POLITICAL KYC MODAL -->
+      <div id="modal-kyc" class="modal-kyc-overlay">
+
+          <div class="modal-kyc-content">
+            <img id="closeModalKYC" class="modal-kyc-close" src="img/close-btn.svg" alt="" >
+            <h2>AML/CTF ve KYC Politikası</h2>
+            <p>
+                Kara Para Aklamayı Önleme Politikası.
+            </p>
+            <p>
+                <strong>PayFast</strong> hizmeti, kullanıcıları, hizmeti kara para aklama, terörün finansmanı, her türlü yasa dışı eylem amacıyla kullanma girişimlerine karşı ve ayrıca hizmeti yasaklanmış ürün ve hizmetleri satın almak için kullanmaya karşı uyarır.
+            </p>
+            <p>
+                Kara para aklama, yasa dışı fon kaynaklarının meşru görünen fonlara veya yatırımlara dönüştürülerek gizlenmesi sürecidir.
+          </p>
+          <h2>Genel hükümler</h2>
+          <p>Yasadışı işlemleri önlemek amacıyla Hizmet, Kullanıcı tarafından oluşturulan tüm Uygulamalar için belirli gereksinimler belirler:</p>
+          <ul>
+            <li>Başvuru kapsamındaki Ödemenin göndericisi ve alıcısı aynı kişi olmalıdır. Hizmetlerin kullanılmasıyla üçüncü şahıslar lehine transfer yapılması kesinlikle yasaktır.</li>
+            <li>Kullanıcı tarafından Uygulamaya girilen tüm iletişim bilgilerinin yanı sıra Kullanıcı tarafından Hizmete iletilen diğer kişisel veriler güncel ve tamamen güvenilir olmalıdır.</li>
+            <li>
+                Kullanıcının, anonim proxy sunucuları veya İnternet'e yönelik diğer anonim bağlantıları kullanarak Uygulamalar oluşturması kesinlikle yasaktır.
+            </li>
+          </ul>
+            <p>Bu kara para aklamayı önleme politikası (bundan sonra "AML Politikası" olarak anılacaktır), <strong>PayFast</strong> Hizmeti tarafından kara para aklamayla mücadele etmek için kullanılan prosedürleri ve mekanizmaları açıklamaktadır. <strong>PayFast</strong> Hizmeti buna uymaktadır. aşağıdaki kurallara göre:</p>
+          <ul>
+            <li>bilinen suçlular ve/veya teröristlerle iş ilişkisine girmeyin;</li>
+            <li>bilinen suç ve/veya terörist faaliyetlerin sonucu olan işlemleri işlememek;</li>
+            <li>bilinen suç ve/veya terörist faaliyetlerle ilgili hiçbir işlemi kolaylaştırmamak;</li>
+            <li>
+                Afganistan, Bosna Hersek, ABD, Kore Demokratik Halk Cumhuriyeti, Kongo Demokratik Cumhuriyeti, Eritre, Etiyopya, Guyana, İran gibi ülke vatandaşlarının hizmetlerin tamamının veya bir kısmının kullanımını kısıtlama veya yasaklama hakkına sahiptir, Irak, Lao Demokratik Halk Cumhuriyeti, Libya, Somali, Güney Sudan, Sri Lanka, Sudan, Suriye, Trinidad ve Tobago, Tunus, Uganda, Vanuatu, Ukrayna.
+            </li>
+            <li>Doğrulama prosedürü</li>
+          </ul>
+          <p>
+            <strong>PayFast</strong> hizmeti, kara para aklamayı önleme standartlarının (Müşterinizi Tanıyın (KYC) politikası) bir parçası olarak kendi doğrulama prosedürlerini oluşturur.
+          </p>
+          <ul>
+            <li>
+                <strong>PayFast</strong> Hizmetinin kullanıcıları bir doğrulama prosedüründen geçer (resmi bir kimlik belgesi ibraz edin: pasaport veya kimlik kartı). <strong>PayFast</strong> hizmeti, AML Politikasının uygulanması amacıyla Kullanıcı kimlik bilgilerini toplama hakkını saklı tutar. Bu bilgiler, <strong>PayFast</strong>'ın Gizlilik Politikasına ve Kişisel Veri İşleme Politikasına kesinlikle uygun olarak işlenir ve saklanır.
+            </li>
+            <li>
+                Ayrıca <strong>PayFast</strong> Hizmeti, Kullanıcıyı tanımlamak için ikinci bir belge talep edebilir: Kullanıcının tam adını ve gerçek ikamet yerini gösteren, 3 aydan eski olmayan bir banka ekstresi veya hizmet faturası; hizmet ayrıca Verilen bilgilerin sahte olduğuna dair şüphelerin olması halinde, müşterinin fotoğraf/video doğrulamasını talep etme hakkına sahiptir.
+            </li>
+            <li>
+                <strong>PayFast</strong> hizmeti, Kullanıcılar tarafından sağlanan belge ve bilgilerin gerçekliğini doğrular ve tehlikeli veya şüpheli olduğu belirlenen Kullanıcılar hakkında ek bilgi alma hakkını saklı tutar.
+            </li>
+          </ul>
+          <p>
+            Kullanıcının kimlik bilgileri değiştirilmişse veya etkinliği şüpheli görünüyorsa, <strong>PayFast</strong> Hizmeti, geçmişte kimlik doğrulaması yapılmış olsa bile Kullanıcıdan güncellenmiş belgeler talep etme hakkına sahiptir.
+          </p>
+          <h2>AML Politikasına uyumdan sorumlu</h2>
+          <p>
+            AML Politikası Uyumluluk Görevlisi, <strong>PayFast</strong>'ın bir çalışanıdır ve sorumlulukları AML Politikasına uygunluğun sağlanmasını içerir:
+          </p>
+          <ul>
+            <li>
+                Kullanıcıların kimlik bilgilerinin toplanması ve kişisel verilerin işlenmesinden sorumlu temsilciye aktarılması;
+            </li>
+            <li>
+                mevcut yasa ve yönetmeliklerin gerektirdiği tüm raporların yazılması, gözden geçirilmesi, sunulması ve sürdürülmesine yönelik iç politika ve prosedürlerin oluşturulması ve güncellenmesi;
+            </li>
+            <li>
+                işlemleri izlemek ve Kullanıcıların normal faaliyetlerinden önemli sapmaları analiz etmek;
+            </li>
+            <li>
+                belgeleri, dosyaları, formları ve günlükleri depolamak ve almak için bir kayıt yönetim sisteminin uygulanması;
+            </li>
+            <li>
+                Risk değerlendirmelerinin düzenli olarak güncellenmesi.
+            </li>
+          </ul>
+          <p>
+            AML Politikası Uyum Görevlisi, kara para aklamayı, terörün finansmanını ve diğer yasa dışı faaliyetleri önlemeyle ilgilenen kolluk kuvvetleriyle etkileşim kurma hakkına sahiptir.
+          </p>
+          <h2>Мониторинг транзакций</h2>
+          <p>
+            Kullanıcı işlemlerinin izlenmesi ve alınan verilerin analiz edilmesi aynı zamanda riskin değerlendirilmesi ve şüpheli işlemlerin tespit edilmesi için de bir araçtır. Kara para aklama şüphesi varsa <strong>PayFast</strong> Hizmeti tüm işlemleri kontrol eder ve aşağıdaki hakları saklı tutar:
+          </p>
+          <ul>
+            <li>
+                şüpheli işlemleri ilgili kolluk kuvvetlerine bildirmek;
+            </li>
+            <li>
+                Kullanıcıdan her türlü ek bilgi ve belgeyi sağlamasını talep edebilir;
+            </li>
+            <li>
+                Kullanıcının hesabını askıya almak veya sonlandırmak.
+            </li>
+            <li>
+                Koşullar açıklığa kavuşuncaya kadar takası askıya alın ve varlıkları dondurun.
+            </li>
+            <li>
+                Kullanıcı sözleşmesine uygun olarak değişim prosedürünü iptal ederek parayı kullanıcıya iade edin
+            </li>
+            <li>
+                Risk değerlendirmesi
+            </li>
+          </ul>
+          <p>
+            Yukarıdaki liste kapsamlı değildir. AML Politika Görevlisi, Kullanıcı işlemlerini günlük olarak izleyerek bunların rapor edilmesi veya şüpheli olarak değerlendirilmesi gerekip gerekmediğini belirler.
+          </p>
+
+          <p>
+            <strong>PayFast</strong> Hizmeti, uluslararası gerekliliklere uygun olarak kara para aklama ve terörün finansmanıyla mücadele etmek için risk temelli bir yaklaşım kullanır. Dolayısıyla kara para aklamayı ve terörün finansmanını önlemeye yönelik tedbirler belirlenen risklerle orantılıdır.
+          </p>
+          <p>Son güncelleme tarihi: 10/09/2023</p>
+      </div>
+      </div>
+    
+      <script src='js/index.js'></script>
+      <script src='js/translations.js'></script>
+    </body>
+    </html>
+    
