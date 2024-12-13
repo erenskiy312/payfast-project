@@ -1,13 +1,16 @@
 const langToggle = document.getElementById('lang-toggle');
+const mobLangToggle = document.getElementById('mob-lang-toggle');
 const langDropdown = document.querySelector('.lang-dropdown');
 const langOptions = document.querySelectorAll('.lang-option');
 const arrow = document.querySelector('.arrow-indicator');
 
 const networkToggle = document.getElementById('network-toggle');
+const mobNetworkToggle = document.getElementById('mob-network-toggle');
 const dropdownNetwork = document.querySelector('.dropdown-network');
 
 const modalPromo = document.getElementById('modal-promo');
 const openModalPromo = document.getElementById('openModalPromo');
+const mobOpenModalPromo = document.getElementById('mob-openModalPromo');
 const closeModalPromo = document.getElementById('closeModalPromo');
 const promoCode = document.getElementById('promo-code')
 const copyBtnPromo = document.getElementById('copyBtn');
@@ -16,8 +19,16 @@ const modalKYC = document.getElementById('modal-kyc');
 const openModalKYC = document.getElementById('openModalKYC');
 const closeModalKYC = document.getElementById('closeModalKYC');
 
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("active");
+}
 
 openModalPromo.addEventListener('click', () => {
+  modalPromo.classList.add('show')
+})
+
+mobOpenModalPromo.addEventListener('click', () => {
   modalPromo.classList.add('show')
 })
 
@@ -107,12 +118,17 @@ const closeAllDropdowns = () => {
   };
   
   // Обработчики событий
-  langToggle.addEventListener('click', (event) => {
+  mobLangToggle.addEventListener('click', (event) => {
     event.stopPropagation(); // Останавливаем всплытие события
     toggleDropdown(langDropdown);
   });
   
-  networkToggle.addEventListener('click', (event) => {
+  mobNetworkToggle.addEventListener('click', (event) => {
+    event.stopPropagation(); // Останавливаем всплытие события
+    toggleDropdown(dropdownNetwork);
+  });
+
+  mobNetworkToggle.addEventListener('click', (event) => {
     event.stopPropagation(); // Останавливаем всплытие события
     toggleDropdown(dropdownNetwork);
   });
@@ -136,13 +152,13 @@ const closeAllDropdowns = () => {
     }
   };
 
-langToggle.addEventListener('click', (event) => {
+  mobLangToggle.addEventListener('click', (event) => {
     event.stopPropagation(); // Останавливаем всплытие события
     toggleDropdown(langDropdown);
   });
   
   // Навешиваем обработчики событий
-  networkToggle.addEventListener('click', (event) => {
+  mobNetworkToggle.addEventListener('click', (event) => {
     event.stopPropagation(); // Останавливаем всплытие события
     toggleDropdown(dropdownNetwork);
   });
