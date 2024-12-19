@@ -1508,6 +1508,14 @@
   }
 }
 
+@media screen and (max-width: 451px) {
+  .help-icon{
+    top: 124%;
+    left: 25%;
+  }
+}
+
+
 @media screen and (max-width: 442px) {
   .help-icon{
     top: 125%;
@@ -1515,10 +1523,66 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .help-icon{
+    top: 134%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .help-icon{
+    top: 139%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .help-icon{
+    top: 128%;
+  }
+}
+
+@media screen and (max-width: 338px) {
+  .help-icon{
+    top: 119%;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .help-icon{
     top: 177%;
     left: 27%;
+  }
+}
+
+@media screen and (max-width: 312px) {
+  .help-icon{
+    top: 162%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .help-icon{
+    top: 169%;
+  }
+}
+
+@media screen and (max-width: 254px) {
+  .help-icon{
+    top: 152%;
+    left: 27%;
+  }
+}
+
+@media screen and (max-width: 223px) {
+  .help-icon{
+    top: 159%;
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 205px) {
+  .help-icon{
+    top: 151%;
   }
 }
 
@@ -1908,7 +1972,7 @@ footer{
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  display: block;
+  display: none;
 }
 
 .modal-promo-overlay.show {
@@ -2129,9 +2193,15 @@ footer{
 
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 768px) {
   .modal-kyc-content{
-    max-width: 60%;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .modal-kyc-content{
+    /* max-width: 64%; */
   }
 }
 
@@ -2144,18 +2214,20 @@ footer{
 
 @media screen and (max-width: 768px) {
   .modal-kyc-close{
-    width: 15px;
-    top: 36px;
-    right: 400px;
+    width: 16px;
+    top: 5%;
+    right: 12%;
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 325px) {
   .modal-kyc-close{
-    width: 18px;
-    right: 190px;
+    width: 13px;
+    top: 4%;
+    right: 8%;
   }
 }
+
 
 .modal-kyc-content > h2 {
   font-size: 15px;
@@ -2164,7 +2236,13 @@ footer{
 
 @media screen and (max-width: 768px) {
   .modal-kyc-content > h2{
-    font-size: 22px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .modal-kyc-content > h2{
+    font-size: 15px;
   }
 }
 
@@ -2175,8 +2253,14 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
-  .modal-kyc-content > p{
+  .modal-kyc-content > p {
     font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .modal-kyc-content > p {
+    font-size: 13px;
   }
 }
 
@@ -2191,6 +2275,12 @@ footer{
   .modal-kyc-content > ul{
     font-size: 17px;
     line-height: 21px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .modal-kyc-content > ul{
+    font-size: 14px;
   }
 }
 
