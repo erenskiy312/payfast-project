@@ -12,6 +12,7 @@
       <nav class="navbar">
         <img class="hat-icon" src="img/hat-icon.svg" alt="">
         <img class="logo" src="img/logo.svg" alt="">
+        <img class="mob-logo" src="img/footer-payfast-logo.svg" alt="">
         <ul class="nav-links">
           <li>
             <svg id="openModalPromo" class="gift-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +48,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10 6C8.89543 6 8 6.89543 8 8C8 9.10457 8.89543 10 10 10C11.1046 10 12 9.10457 12 8C12 6.89543 11.1046 6 10 6ZM6 8C6 5.79086 7.79086 4 10 4C12.2091 4 14 5.79086 14 8C14 10.2091 12.2091 12 10 12C7.79086 12 6 10.2091 6 8Z" fill="currentColor" fill-opacity="0.94902"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15C7.44286 15 5.25694 16.6001 4.39366 18.8572L2.52563 18.1428C3.6752 15.1371 6.58679 13 10 13C13.4132 13 16.3248 15.1371 17.4744 18.1428L15.6064 18.8572C14.7431 16.6001 12.5572 15 10 15Z" fill="currentColor" fill-opacity="0.94902"/>
                 </svg>
-
+                <img id="mob-network-toggle" class="network-icon" src="img/network-icon.svg" alt="">
                 <div class="dropdown-network">
                     <div class="network-item">
                         <span class="title-network">TELEGRAM</span>
@@ -75,6 +76,7 @@
                 <svg id="lang-toggle" class="language-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6206 2.00706C11.7465 2.00237 11.873 2 12 2C12.127 2 12.2535 2.00237 12.3794 2.00706C12.4959 1.99298 12.6135 1.99971 12.7265 2.02599C17.9102 2.39815 22 6.72146 22 12C22 17.2785 17.9102 21.6019 12.7265 21.974C12.6135 22.0003 12.4959 22.007 12.3794 21.9929C12.2535 21.9976 12.127 22 12 22C11.873 22 11.7465 21.9976 11.6206 21.9929C11.504 22.007 11.3865 22.0003 11.2735 21.974C6.08979 21.6018 2 17.2785 2 12C2 6.72147 6.08979 2.39817 11.2735 2.02599C11.3865 1.99971 11.504 1.99298 11.6206 2.00706ZM14.3753 19.6415C16.3116 19.0402 17.9329 17.7233 18.9297 16H15.6277C15.3421 17.2534 14.9225 18.4743 14.3753 19.6415ZM13.5697 16C13.2202 17.3536 12.6937 18.6602 12 19.885C11.3063 18.6602 10.7797 17.3536 10.4302 16H13.5697ZM15.9663 14H19.748C19.9125 13.3608 20 12.6906 20 12C20 11.3094 19.9125 10.6392 19.748 10H15.9663C16.0404 10.662 16.0778 11.3297 16.0778 12C16.0778 12.6703 16.0404 13.338 15.9663 14ZM13.9523 10C14.0356 10.6611 14.0778 11.3291 14.0778 12C14.0778 12.6709 14.0356 13.3389 13.9523 14H10.0477C9.96437 13.3389 9.92218 12.6709 9.92218 12C9.92218 11.3291 9.96437 10.6611 10.0477 10H13.9523ZM15.6277 8H18.9297C17.9329 6.27669 16.3116 4.95975 14.3753 4.35852C14.9225 5.52565 15.3421 6.74663 15.6277 8ZM13.5697 8H10.4302C10.7797 6.64643 11.3063 5.33979 12 4.11504C12.6937 5.33979 13.2202 6.64643 13.5697 8ZM9.62469 4.35853C7.68839 4.95976 6.06714 6.2767 5.07026 8H8.37225C8.65792 6.74663 9.07745 5.52566 9.62469 4.35853ZM8.03363 10H4.25203C4.08751 10.6392 4 11.3094 4 12C4 12.6906 4.08751 13.3608 4.25204 14H8.03363C7.95961 13.338 7.92218 12.6703 7.92218 12C7.92218 11.3297 7.95961 10.662 8.03363 10ZM8.37225 16C8.65792 17.2534 9.07746 18.4743 9.62469 19.6415C7.68839 19.0402 6.06714 17.7233 5.07026 16H8.37225Z" fill="currentColor"/>
                 </svg>
+                <img id="mob-lang-toggle" class="language-icon" src="img/language-icon.svg" alt="">
             </li>
             <ul class="lang-dropdown">
               <li class="lang-option active" data-lang="ru">
@@ -99,8 +101,33 @@
           </div>
           <li class="separator"></li>
           <li><a  class="nav-reviews"  href="https://review.payfast.exchange/">Hizmet incelemeleri</a></li>
-          <li><button onClick="window.location.href='https://convert.payfast.exchange/'">Transfer yap</button></li>
+          <li><button class="nav-transfer" onClick="window.location.href='https://convert.payfast.exchange/'">Transfer yap</button></li>
         </ul>
+
+         <!-- BURGER MENU -->
+         <div class="burger-menu">
+          <img class="burger-menu__icon" src="img/burger-menu__icon.svg" alt="" onclick="toggleMenu()">
+        <div class="burger-menu__content" id="menu">
+          <div class="menu-header">
+            <img id="mob-openModalPromo" class="menu-header__icon" src="img/gift-icon.svg" alt="Gift" />
+              <img class="burger-menu__close" src="img/close-btn.svg" alt="" onclick="toggleMenu()">
+          </div>
+          <ul class="menu-items">
+            <li>
+              <a  class="mob-nav-reviews"  href="https://review.payfast.exchange/">Hizmet incelemeleri</a>
+            </li>
+            <li>
+              <a href="https://convert.payfast.exchange/">Dönüştürücü</a>
+            </li>
+            <li>
+              <a id="link-openModalPromo" href="#">Promosyon kodu</a>
+            </li>
+            <li>
+              <a href="#" id="mob-openModalKYC" class="mob-footer-political">AML/KYC</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       </nav>
 
       <div class="introduction">
@@ -114,10 +141,18 @@
                     sağlar. Minimum ücretlerle yüksek kaliteli hizmeti garanti <br>
                     ediyoruz!
                 </p>
-                    <button 
-                    onClick="window.location.href='https://convert.payfast.exchange/'"
-                    class="transfer-btn">Gönder</button>
-                    <button class="convertion-btn">Şimdi dönüştür</button>
+
+                <p class="mob-introduction-descr">
+                  Hızlı ve Güvenilir Çeviriler Duyurusu <br>
+                  minimum komisyon ve <br> ile dünya
+                  Yüksek düzeyde hizmet!
+                </p>
+                <div class="introduction-buttons">
+                  <button 
+                  onClick="window.location.href='https://convert.payfast.exchange/'"
+                  class="transfer-btn">Gönder</button>
+                  <button class="convertion-btn">Şimdi dönüştür</button>
+                </div>
                 </div>
                 <div class="globe-wrapper">
                     <img class="globe" src="img/globe.svg" alt="">
@@ -129,7 +164,7 @@
 
   <main>
     <section class="features">
-            <h1>Neden bizi seçmelisiniz</h1> 
+            <h1 id="features-title-tr">Neden bizi seçmelisiniz</h1> 
             <div class="features-grid">
 
                 <div>
@@ -179,7 +214,7 @@
         <h1 class="process__title">Nasıl çalışır</h1>
         <div class="process__steps">
           <!-- Шаг 1 -->
-          <div class="step">
+          <div class="step step-first">
             <img src="img/step-first-icon.svg" alt="">
             <div class="step__content">
               <h3 class="step__title">Para birimi dönüştürme</h3>
@@ -193,7 +228,7 @@
             <img class="pointer-first" src="img/pointer-first.svg" alt="">
         </div>
           <!-- Шаг 2 -->
-          <div class="step">     
+          <div class="step step-second">     
             <img src="img/step-second-icon.svg" alt="">
             <div class="step__content">
               <h3 class="step__title">Başvuru formunu doldurma</h3>
@@ -204,7 +239,7 @@
             </div>
         </div>
         <!-- Шаг 3 -->
-        <div class="step">  
+        <div class="step step-third">  
             <img class="pointer-second" src="img/pointer-second.svg" alt="">
             <img src="img/step-third-icon.svg" alt="">
             <div class="step__content">
@@ -217,7 +252,7 @@
             </div>
           </div>
           <!-- Шаг 4 -->
-          <div class="step">
+          <div class="step step-fourth">
             <img class="pointer-third" src="img/pointer-third.svg" alt="">
             <img src="img/step-fourth-icon.svg" alt="">
             <div class="step__content">
@@ -329,8 +364,8 @@
             Promosyon kodunu kullanarak  <br>
             <a href="https://convert.payfast.exchange/">dönüştürücü</a> sayfasında %5 komisyonu ödeyin
           </h3>
-          <div id="promo-code" class="promo-code">PAYBONUS</div>
-          <button id="copyBtn" class="copy-promo-btn" >Kopyala</button>
+          <div id="promo-code-tr" class="promo-code">PAYBONUS</div>
+          <button id="copyBtn-tr" class="copy-promo-btn" >Kopyala</button>
         </div>
       </div>
 
@@ -445,7 +480,6 @@
       </div>
     
       <script src='js/index.js'></script>
-      <script src='js/translations.js'></script>
     </body>
     </html>
     
